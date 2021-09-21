@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Oleksandr Kotovskyi](https://up.htmlacademy.ru/htmlcss/32/user/1688167).
-* Наставник: `Неизвестно`.
+- Студент: [Oleksandr Kotovskyi](https://up.htmlacademy.ru/htmlcss/32/user/1688167).
+- Наставник: `Андрей Грачев`.
 
 ---
 
