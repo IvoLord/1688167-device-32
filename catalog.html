@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Каталог</title>
+    <title>Каталог товаров</title>
   </head>
 
   <body>
     <header class="page-header">
-      <a href="http://index.html"
+      <a href="index.html"
         ><img src="" alt="Логитип интернет магазина Девайс" class="logo"
       /></a>
 
@@ -29,39 +29,53 @@
           </li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Поиск по сайту</a>
-          </li>
-          <li class="navigation-item">
+        <div class="navigation-user">
+          <form
+            class="appointment-form"
+            action="https://echo.htmlacademy.ru/"
+            method="POST"
+          >
+            <label for="search">Поиск по сайту</label>
+            <input type="search" name="search" id="search" />
+            <button type="submit">Найти</button>
+          </form>
+
+          <div class="user-login">
             <a href="#" class="navigation-link">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Корзина</a>
-          </li>
-        </ul>
+          </div>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Сравнить</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Корзина</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="title visually-hidden">Каталог</h1>
+        <h2 class="catalog-title">Моноподы для селфи</h2>
 
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
 
       <section class="filter">
         <h2 class="title">Фильтр</h2>
+
         <form action="https://echo.htmlacademy.ru/" class="form">
           <fieldset class="form-group cost">
             <legend>Стоимость</legend>
@@ -120,7 +134,7 @@
             </ul>
           </fieldset>
 
-          <input type="submit" value="Показать" class="button" />
+          <button class="button" type="submit">Показать</button>
         </form>
       </section>
     </main>
@@ -144,12 +158,9 @@
             меньшему</label
           >
         </fieldset>
-
-        <input
-          class="visually-hidden"
-          type="submit"
-          value="Отсортировать продукты"
-        />
+        <button class="visually-hidden" type="submit">
+          Отсортировать продукты
+        </button>
       </form>
 
       <div class="products-cards">
@@ -209,7 +220,7 @@
         >
 
         <ul class="list">
-          <li class="item"><a class="link disabled">1</a></li>
+          <li class="item"><a class="link current disabled">1</a></li>
           <li class="item"><a class="link" href="#">2</a></li>
           <li class="item"><a class="link" href="#">3</a></li>
           <li class="item"><a class="link" href="#">4</a></li>
@@ -223,7 +234,7 @@
     </section>
 
     <footer class="main-footer">
-      <a class="footer-logo" href="#"><img src="" alt="Логитип" /></a>
+      <a href="index.html"><img src="" alt="Логитип" class="footer-logo" /></a>
 
       <address class="footer-address">
         <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -239,13 +250,19 @@
 
       <ul class="social-list">
         <li class="social-item">
-          <a href="#" class="button"><img src="" alt="facebook" /> </a>
+          <a href="https://www.facebook.com/htmlacademy" class="button"
+            ><img src="" alt="facebook" />
+          </a>
         </li>
         <li class="social-item">
-          <a href="#" class="button"><img src="" alt="instagram" /> </a>
+          <a href="https://www.instagram.com/htmlacademy" class="button"
+            ><img src="" alt="instagram" />
+          </a>
         </li>
         <li class="social-item">
-          <a href="#" class="button"><img src="" alt="twitter" /> </a>
+          <a href="https://twitter.com/htmlacademy_ru" class="button"
+            ><img src="" alt="twitter" />
+          </a>
         </li>
       </ul>
 
