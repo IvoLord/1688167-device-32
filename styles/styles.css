@@ -1,0 +1,295 @@
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/rubik/rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* главная */
+
+/* .visually-hidden {
+  display: none;
+} */
+
+body {
+  font-family: rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main-header {
+  background-color: #ffe17f;
+  color: #000000;
+}
+
+.navigation-main {
+  font-family: raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.navigation-user {
+  font-size: 16px;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item {
+  list-style-type: none;
+}
+.about-us--item {
+  list-style-type: disc;
+  color: #ffe17f;
+}
+.about-us--item--color-text {
+  color: #000000;
+}
+
+.title {
+  font-family: raleway, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+.description--link {
+  font-family: raleway, sans-serif;
+  line-height: auto;
+  font-weight: 800;
+}
+
+.slider-table th {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.slider-table td {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.kategories--item {
+  font-family: raleway, sans-serif;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.servises--list {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.link-button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  font-family: raleway, sans-serif;
+  line-height: auto;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.link-button--current {
+  font-family: raleway, sans-serif;
+  line-height: auto;
+  font-weight: 800;
+  background-color: #000000;
+  color: #ffe17f;
+}
+
+.link-button2 {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  font-family: raleway, sans-serif;
+  line-height: auto;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.about-delivery {
+  font-family: raleway, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: auto;
+  background-color: #f0f0f0;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.about-us--item {
+  font-family: rubik, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.title-item {
+  font-family: rubik, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.adddress-box--text {
+  font-style: normal;
+}
+
+.phone-number {
+  color: #000000;
+  font-style: normal;
+}
+
+.appointment {
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
+.its-free {
+  font-weight: 400;
+}
+
+.main-footer {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+/* .main-footer--link{
+  color: #ffffff;
+  text-decoration: none;
+} */
+
+.main-footer--phone-number {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-footer--servises {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* каталог */
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: auto;
+  opacity: 0.6;
+}
+
+.filter {
+  background-color: #ebebeb;
+}
+
+.filter--title {
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: auto;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #dcdcdc;
+}
+
+.form--group {
+  border: none;
+}
+
+.form-title {
+  font-family: rubik, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.form--range-text {
+  font-family: rubik, sans-serif;
+  font-size: 15px;
+  line-height: auto;
+  opacity: 0.3;
+}
+.items--sort {
+  background-color: #ebebeb;
+}
+
+.sort--title {
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: auto;
+  text-transform: uppercase;
+}
+
+.cards--title {
+  font-family: rubik, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.cards--price {
+  font-family: rubik, sans-serif;
+  font-size: 18px;
+  line-height: auto;
+  font-weight: 400;
+}
+
+.select-pagination {
+  background-color: #ebebeb;
+}
+
+.select-pagination--list {
+  font-size: 16px;
+  line-height: auto;
+  opacity: 0.3;
+}
+
+.select-pagination--link--prev,
+.select-pagination--link--next {
+  font-family: raleway, sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
