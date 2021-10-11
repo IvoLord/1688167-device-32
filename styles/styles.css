@@ -2,44 +2,38 @@
   font-family: Rubik;
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: Rubik;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: Rubik;
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/rubik/rubik-800.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
 /* главная */
 
-/* .visually-hidden {
-  display: none;
-} */
-
 body {
-  font-family: rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  background-color: #ffffff;
-  color: #000000;
 }
 
 .main-header {
@@ -48,7 +42,7 @@ body {
 }
 
 .navigation-main {
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
@@ -65,27 +59,10 @@ body {
   text-decoration: none;
 }
 
-.item {
-  list-style-type: none;
-}
-.about-us--item {
-  list-style-type: disc;
-  color: #ffe17f;
-}
-.about-us--item--color-text {
-  color: #000000;
-}
-
 .title {
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
-  font-weight: 800;
-}
-
-.description--link {
-  font-family: raleway, sans-serif;
-  line-height: auto;
   font-weight: 800;
 }
 
@@ -101,7 +78,7 @@ body {
 }
 
 .kategories--item {
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   line-height: 24px;
   font-weight: 800;
 }
@@ -113,43 +90,43 @@ body {
 
 .link-button {
   border: 0;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00000000;
   font-size: 18px;
   color: #000000;
   text-decoration: none;
-  font-family: raleway, sans-serif;
-  line-height: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 21px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
 .link-button--current {
-  font-family: raleway, sans-serif;
-  line-height: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 21px;
   font-weight: 800;
   background-color: #000000;
   color: #ffe17f;
 }
 
 .link-button2 {
-  border: 3px solid rgba(0, 0, 0, 0.1);
-  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid #00000010;
+  background-color: #00000000;
   font-size: 18px;
   color: #000000;
   text-decoration: none;
-  font-family: raleway, sans-serif;
-  line-height: auto;
+  font-family: Raleway, sans-serif;
+  line-height: 21px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
 .about-delivery {
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 20px;
-  line-height: auto;
+  line-height: 23px;
   background-color: #f0f0f0;
   color: #000000;
   text-transform: uppercase;
@@ -157,14 +134,14 @@ body {
 }
 
 .about-us--item {
-  font-family: rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 
 .title-item {
-  font-family: rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -213,7 +190,7 @@ body {
 
 .breadcrumbs {
   font-size: 16px;
-  line-height: auto;
+  line-height: 19px;
   opacity: 0.6;
 }
 
@@ -222,10 +199,10 @@ body {
 }
 
 .filter--title {
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  line-height: auto;
+  line-height: 19px;
   text-transform: uppercase;
   color: #000000;
   background-color: #dcdcdc;
@@ -236,16 +213,16 @@ body {
 }
 
 .form-title {
-  font-family: rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
 }
 
 .form--range-text {
-  font-family: rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 15px;
-  line-height: auto;
+  line-height: 18px;
   opacity: 0.3;
 }
 .items--sort {
@@ -253,24 +230,24 @@ body {
 }
 
 .sort--title {
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  line-height: auto;
+  line-height: 19px;
   text-transform: uppercase;
 }
 
 .cards--title {
-  font-family: rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .cards--price {
-  font-family: rubik, sans-serif;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
-  line-height: auto;
+  line-height: 24px;
   font-weight: 400;
 }
 
@@ -280,15 +257,15 @@ body {
 
 .select-pagination--list {
   font-size: 16px;
-  line-height: auto;
+  line-height: 19px;
   opacity: 0.3;
 }
 
 .select-pagination--link--prev,
 .select-pagination--link--next {
-  font-family: raleway, sans-serif;
+  font-family: Raleway, sans-serif;
   font-size: 16px;
-  line-height: auto;
+  line-height: 19px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
