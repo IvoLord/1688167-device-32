@@ -34,6 +34,8 @@ html {
 /* главная */
 
 body {
+  margin: 0;
+  min-width: 1440px;
   display: flex;
   flex-direction: column;
   font-family: Rubik, sans-serif;
@@ -64,41 +66,22 @@ body {
 }
 
 .main-header {
+  padding-top: 17px;
+}
+
+.main-header--container {
+  width: 1160px;
+  min-height: 323px;
+  margin: 0 auto;
   background-color: #ffe17f;
   color: #000000;
 }
 
-.navigation {
-  display: flex;
-  flex-direction: column;
-}
-
-.navigation-main {
-  width: 1041px;
-  margin: 0 auto;
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  order: 1;
-}
-
-.navigation-main--list {
-  justify-content: space-between;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
 .navigation-user {
-  width: 1041px;
-  justify-content: space-between;
-  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
   font-size: 16px;
-  width: 1041px;
 }
 
 .navigation-user--user-form {
@@ -119,6 +102,23 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+.navigation-main {
+  padding: 0 60px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.navigation-main--list {
+  justify-content: space-between;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -156,6 +156,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -231,8 +232,6 @@ body {
 }
 
 .container--about-us {
-  display: flex;
-  flex-direction: column;
   width: 1160px;
   margin: 0 auto;
   min-height: 936px;
@@ -256,8 +255,6 @@ body {
 }
 
 .about-us {
-  display: flex;
-  flex-direction: column;
   width: 560px;
   margin-right: 40px;
 }
@@ -275,8 +272,6 @@ body {
 
 .mian-contacts {
   width: 560px;
-  display: flex;
-  flex-direction: column;
 }
 
 .adddress-box--text {
@@ -298,10 +293,8 @@ body {
   background-color: #f0f0f0;
 }
 
-.container--appointment {
+.appointment--container {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
 }
@@ -348,11 +341,13 @@ body {
 .main-footer--container-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-footer--container-social {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .main-footer--list {

@@ -8,8 +8,9 @@
 
   <body>
     <!-- хедер -->
-    <div class="container">
-      <header class="main-header">
+
+    <header class="main-header">
+      <div class="main-header--container">
         <a class="link main-header--link" href="index.html"
           ><img
             class="logo main-header--logo"
@@ -20,6 +21,43 @@
         /></a>
 
         <nav class="navigation">
+          <div class="navigation-user">
+            <!-- форма -->
+
+            <form
+              class="user-form navigation-user--user-form"
+              action="https://echo.htmlacademy.ru/"
+              method="POST"
+            >
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input
+                class="search user-form--search"
+                type="search"
+                name="search"
+                id="search"
+              />
+              <button class="button" type="submit">Найти</button>
+            </form>
+
+            <!-- логин -->
+
+            <div class="navigation-user--login">
+              <a href="#" class="link login--link">Выйти</a>
+              <a href="#" class="link login--link">Коля Петухов</a>
+            </div>
+
+            <!-- список решений к покупке -->
+
+            <ul class="list navigation-user--list">
+              <li class="item navigation-user--item">
+                <a href="#" class="link navigation-user--link">Сравнить</a>
+              </li>
+              <li class="item navigation-user--item">
+                <a href="#" class="link navigation-user--link">Корзина</a>
+              </li>
+            </ul>
+          </div>
+
           <div class="navigation-main">
             <ul class="list navigation-main--list">
               <li class="item navigation-main--item">
@@ -44,45 +82,9 @@
               </li>
             </ul>
           </div>
-
-          <div class="navigation-user">
-            <!-- форма -->
-
-            <form
-              class="user-form navigation-user--user-form"
-              action="https://echo.htmlacademy.ru/"
-              method="POST"
-            >
-              <label class="visually-hidden" for="search">Поиск по сайту</label>
-              <input
-                class="search user-form--search"
-                type="search"
-                name="search"
-                id="search"
-              />
-              <button class="button" type="submit">Найти</button>
-            </form>
-
-            <!-- логин -->
-
-            <div class="login navigation-user--login">
-              <a href="#" class="link navigation-link">Войти</a>
-            </div>
-
-            <!-- список решений к покупке -->
-
-            <ul class="list navigation-user--list">
-              <li class="item navigation-user--item">
-                <a href="#" class="link navigation-user--link">Сравнить</a>
-              </li>
-              <li class="item navigation-user--item">
-                <a href="#" class="link navigation-user--link">Корзина</a>
-              </li>
-            </ul>
-          </div>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <main class="main-index">
       <div class="container">
@@ -280,7 +282,7 @@
               </li>
             </ul>
 
-            <ul class="pagination-srvis servises--pagination-srvis">
+            <ul class="servises--pagination-srvis">
               <li class="item pagination-srvis--item">
                 <button
                   class="
@@ -402,13 +404,15 @@
       <!-- подписка -->
 
       <section class="appointment">
-        <div class="container--appointment">
+        <div class="appointment--container">
           <h2 class="title appointment--title">Подпишитесь на рассылку</h2>
           <p class="appointment--content">
             Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
             распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
+        </div>
 
+        <div class="appointment--container">
           <form
             class="appointment--form"
             action="https://echo.htmlacademy.ru/"
@@ -431,6 +435,7 @@
               Подписаться
             </button>
           </form>
+
           <p class="appointment--its-free"><b> Это бесплатно</b></p>
         </div>
       </section>
@@ -477,7 +482,7 @@
             >+7 (812) 812-12-12</a
           >
         </div>
-        
+
         <div class="main-footer--container-social">
           <ul class="list main-footer--list">
             <li class="item main-footer--item">
