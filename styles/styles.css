@@ -148,11 +148,11 @@ body {
   line-height: 30px;
 }
 
-.kategories {
+.categories {
   min-height: 253px;
 }
 
-.kategories--list {
+.categories--list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -160,7 +160,7 @@ body {
   justify-content: space-between;
 }
 
-.kategories--item {
+.categories--item {
   width: 160px;
   font-family: Raleway, sans-serif;
   line-height: 24px;
