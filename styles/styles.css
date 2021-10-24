@@ -31,7 +31,7 @@ html {
   height: 100%;
 }
 
-/* главная */
+/* главная--------------------------- */
 
 body {
   margin: 0;
@@ -169,10 +169,6 @@ body {
   outline-offset: inherit;
   background-color: #f0f0f0;
   color: #000000;
-}
-
-.conteiner-flex {
-  display: flex;
 }
 
 .servises--list {
@@ -321,7 +317,7 @@ body {
   font-weight: normal;
 }
 
-/* футер */
+/* футер ------------------*/
 
 .main-footer {
   min-height: 321px;
@@ -377,9 +373,8 @@ body {
 
 /* каталог ------------------------------------------------------------*/
 .inner--header {
+  width: 1160px;
   margin: 0 auto;
-  margin-left: 200px;
-  margin-bottom: 49px;
 }
 
 .inner-header--breadcrumbs {
@@ -392,26 +387,20 @@ body {
   display: flex;
 }
 
-.main-inner {
+.main-inner--container {
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.filter-items {
-  width: 468px;
-  background-color: #ebebeb;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .filter-items--container-title {
+  width: 328px;
   background-color: #dcdcdc;
   min-height: 70px;
 }
 
 .filter-item--title {
-  width: 468px;
   margin: 0;
-  margin-left: 200px;
   padding: 0;
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -422,7 +411,9 @@ body {
 }
 
 .filter-items--container-form {
-  margin-left: 200px;
+  width: 328px;
+  height: 100%;
+  background-color: #ebebeb;
 }
 
 .form-items--group {
@@ -452,9 +443,7 @@ body {
   opacity: 0.3;
 }
 
-.items {
-  flex-grow: 1;
-}
+/* блок товаров ---------------------------------- */
 
 .items--sort {
   min-height: 70px;
@@ -477,7 +466,6 @@ body {
 }
 
 .items--cards {
-  margin-right: 140px;
   margin-left: 72px;
 }
 
@@ -509,26 +497,13 @@ body {
 }
 
 .pagination {
-  display: flex;
-  flex-direction: column;
   margin-left: 72px;
-  margin-right: 140px;
 }
 
 .pagination--link-button2 {
+  display: block;
   text-align: center;
-  border: 3px solid #00000010;
-  background-color: #00000000;
-  font-size: 18px;
-  color: #000000;
-  text-decoration: none;
-  font-family: Raleway, sans-serif;
-  line-height: 21px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
   width: 754px;
-  margin: 0 auto;
   min-height: 49px;
 }
 
