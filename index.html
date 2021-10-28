@@ -42,8 +42,8 @@
             <!-- логин -->
 
             <div class="navigation-user--login">
-              <a href="#" class="link login--link">Выйти</a>
               <a href="#" class="link login--link">Коля Петухов</a>
+              <a href="#" class="link login--link">Выйти</a>
             </div>
 
             <!-- список решений к покупке -->
@@ -65,21 +65,23 @@
                   >Каталог товаров</a
                 >
               </li>
-              <li class="item navigation-main--item">
-                <a class="link navigation-main--link" href="delivery.html"
-                  >Доставка</a
-                >
-              </li>
-              <li class="item navigation-main--item">
-                <a class="link navigation-main--link" href="guarantee.html"
-                  >Гарантия</a
-                >
-              </li>
-              <li class="item navigation-main--item">
-                <a class="link navigation-main--link" href="contacts.html"
-                  >Контакты</a
-                >
-              </li>
+              <div class="navigation-main--container">
+                <li class="item navigation-main--item">
+                  <a class="link navigation-main--link" href="delivery.html"
+                    >Доставка</a
+                  >
+                </li>
+                <li class="item navigation-main--item">
+                  <a class="link navigation-main--link" href="guarantee.html"
+                    >Гарантия</a
+                  >
+                </li>
+                <li class="item navigation-main--item">
+                  <a class="link navigation-main--link" href="contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </div>
             </ul>
           </div>
         </nav>
@@ -114,7 +116,7 @@
                 <h3 class="title description--title">
                   Порхает как бабочка, жалит как пчела!
                 </h3>
-                <p>
+                <p class="description--text">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                   лазером, замаскированным под стандартную камеру.
                 </p>
@@ -147,7 +149,7 @@
 
               <div class="description item--description">
                 <h3 class="title description--title">Худеем правильно!</h3>
-                <p>
+                <p class="description--text">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не
                   пропускать занятия и соблюдать диету.
                 </p>
@@ -180,7 +182,7 @@
                 <h3 class="title description--title">
                   Делай селфи, как Бен Стиллер!
                 </h3>
-                <p>
+                <p class="description--text">
                   Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                 </p>
@@ -236,15 +238,96 @@
         <section class="categories">
           <h2 class="title categories--title visually-hidden">Категории</h2>
           <ul class="list categories--list">
-            <li class="item categories--item">Виртуальная реальность</li>
             <li class="item categories--item">
-              Моноподы <br />
-              для селфи
+              <a class="link categories--link" href="#">
+                <div class="categories--img-container">
+                  <img
+                    class="categories--img"
+                    src="img/other/vr.svg"
+                    height="160"
+                    width="160"
+                    alt="Виртуальная реальность"
+                  />
+                </div>
+                Виртуальная реальность
+              </a>
             </li>
-            <li class="item categories--item">Экшн-камеры</li>
-            <li class="item categories--item">Фитнес-браслеты</li>
-            <li class="item categories--item">Умные часы</li>
-            <li class="item categories--item">Квадрокоптеры</li>
+
+            <li class="item categories--item">
+              <a class="link categories--link" href="#">
+                <div class="categories--img-container">
+                  <img
+                    class="categories--img"
+                    src="img/other/monopods-for-selfie.svg"
+                    height="160"
+                    width="160"
+                    alt="Моноподы для селфи"
+                  />
+                </div>
+                Моноподы <br />
+                для селфи
+              </a>
+            </li>
+
+            <li class="item categories--item">
+              <a class="link categories--link" href="#">
+                <div class="categories--img-container">
+                  <img
+                    class="categories--img"
+                    src="img/other/action-cameras.svg"
+                    height="160"
+                    width="160"
+                    alt="Экшн-камеры"
+                  />
+                </div>
+                Экшн-камеры
+              </a>
+            </li>
+
+            <li class="item categories--item">
+              <a class="link categories--link" href="#">
+                <div class="categories--img-container">
+                  <img
+                    class="categories--img"
+                    src="img/other/fitness-bracelets.svg"
+                    height="160"
+                    width="160"
+                    alt="Фитнес-браслеты"
+                  />
+                </div>
+                Фитнес-браслеты
+              </a>
+            </li>
+
+            <li class="item categories--item">
+              <a class="link categories--link" href="#">
+                <div class="categories--img-container">
+                  <img
+                    class="categories--img"
+                    src="img/other/smart-watch.svg"
+                    height="160"
+                    width="160"
+                    alt="Умные часы"
+                  />
+                </div>
+                Умные часы
+              </a>
+            </li>
+
+            <li class="item categories--item">
+              <a class="link categories--link" href="#">
+                <div class="categories--img-container">
+                  <img
+                    class="categories--img"
+                    src="img/other/drons.svg"
+                    height="160"
+                    width="160"
+                    alt="Квадрокоптеры"
+                  />
+                </div>
+                Квадрокоптеры
+              </a>
+            </li>
           </ul>
         </section>
       </div>
@@ -254,7 +337,7 @@
       <section class="servises">
         <div class="container">
           <h2 class="title servises--title visually-hidden">Сервисы</h2>
-          <div class="conteiner-flex">
+          <div class="servises--conteiner-flex">
             <ul class="list servises--list">
               <li class="item servises--item servises--delivery">
                 <h3 class="title servises--title">Доставка</h3>
@@ -292,7 +375,10 @@
                   "
                   type="button"
                 >
+                <span class="pagination-servis--btn-lable">
+
                   Доставка
+                </span>
                 </button>
               </li>
               <li class="item pagination-srvis--item">
@@ -300,7 +386,10 @@
                   class="link-button pagination-srvis--button"
                   type="button"
                 >
+                <span class="pagination-servis--btn-lable">
+
                   Гарантия
+                </span>
                 </button>
               </li>
               <li class="item pagination-srvis--item">
@@ -308,7 +397,10 @@
                   class="link-button pagination-srvis--button"
                   type="button"
                 >
+                <span class="pagination-servis--btn-lable">
+
                   Кредит
+                </span>
                 </button>
               </li>
             </ul>
@@ -327,7 +419,7 @@
         </div>
 
         <!-- о нас -->
-        <div class="conteiner-flex">
+        <div class="about-us--conteiner-flex">
           <section class="about-us">
             <h2 class="title about-us--title">О нас</h2>
             <p>
