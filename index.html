@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <!-- хедер -->
+    <!-- хедер------------------------------------------------------------------ -->
 
     <header class="main-header">
       <div class="main-header--container">
@@ -22,7 +22,7 @@
 
         <nav class="navigation">
           <div class="navigation-user">
-            <!-- форма -->
+            <!-- форма-------------------------------------------------------------- -->
 
             <form
               class="user-form navigation-user--user-form"
@@ -39,14 +39,14 @@
               <button class="button" type="submit">Найти</button>
             </form>
 
-            <!-- логин -->
+            <!-- логин-------------------------------------------------------------- -->
 
             <div class="navigation-user--login">
               <a href="#" class="link login--link">Коля Петухов</a>
               <a href="#" class="link login--link">Выйти</a>
             </div>
 
-            <!-- список решений к покупке -->
+            <!-- список решений к покупке-------------------------------------------------------------- -->
 
             <ul class="list navigation-user--list">
               <li class="item navigation-user--item">
@@ -59,29 +59,29 @@
           </div>
 
           <div class="navigation-main">
-            <ul class="list navigation-main--list">
+            <ul class="list navigation-main--list1">
               <li class="item navigation-main--item">
                 <a class="link navigation-main--link" href="catalog.html"
                   >Каталог товаров</a
                 >
               </li>
-              <div class="navigation-main--container">
-                <li class="item navigation-main--item">
-                  <a class="link navigation-main--link" href="delivery.html"
-                    >Доставка</a
-                  >
-                </li>
-                <li class="item navigation-main--item">
-                  <a class="link navigation-main--link" href="guarantee.html"
-                    >Гарантия</a
-                  >
-                </li>
-                <li class="item navigation-main--item">
-                  <a class="link navigation-main--link" href="contacts.html"
-                    >Контакты</a
-                  >
-                </li>
-              </div>
+            </ul>
+            <ul class="list navigation-main--list2">
+              <li class="item navigation-main--item">
+                <a class="link navigation-main--link" href="delivery.html"
+                  >Доставка</a
+                >
+              </li>
+              <li class="item navigation-main--item">
+                <a class="link navigation-main--link" href="guarantee.html"
+                  >Гарантия</a
+                >
+              </li>
+              <li class="item navigation-main--item">
+                <a class="link navigation-main--link" href="contacts.html"
+                  >Контакты</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
@@ -94,7 +94,7 @@
           Интернет магазин - Дейвайс
         </h1>
 
-        <!-- слайдер -->
+        <!-- слайдер-------------------------------------------------------------- -->
 
         <section class="slider">
           <h2 class="title slider--title visually-hidden">Популярные товары</h2>
@@ -233,7 +233,7 @@
           </ol>
         </section>
 
-        <!-- категории -->
+        <!-- категории-------------------------------------------------------------- -->
 
         <section class="categories">
           <h2 class="title categories--title visually-hidden">Категории</h2>
@@ -332,12 +332,43 @@
         </section>
       </div>
 
-      <!-- сервисы -->
+      <!-- сервисы-------------------------------------------------------------- -->
 
       <section class="servises">
         <div class="container">
           <h2 class="title servises--title visually-hidden">Сервисы</h2>
-          <div class="servises--conteiner-flex">
+          <div class="servises--container-flex">
+            <ul class="servises--pagination-srvis">
+              <li class="item pagination-srvis--item">
+                <button
+                  class="
+                    link-button
+                    pagination-srvis--button
+                    link-button--current
+                  "
+                  type="button"
+                >
+                  <span class="pagination-servis--btn-lable"> Доставка </span>
+                </button>
+              </li>
+              <li class="item pagination-srvis--item">
+                <button
+                  class="link-button pagination-srvis--button"
+                  type="button"
+                >
+                  <span class="pagination-servis--btn-lable"> Гарантия </span>
+                </button>
+              </li>
+              <li class="item pagination-srvis--item">
+                <button
+                  class="link-button pagination-srvis--button"
+                  type="button"
+                >
+                  <span class="pagination-servis--btn-lable"> Кредит </span>
+                </button>
+              </li>
+            </ul>
+
             <ul class="list servises--list">
               <li class="item servises--item servises--delivery">
                 <h3 class="title servises--title">Доставка</h3>
@@ -364,51 +395,11 @@
                 </p>
               </li>
             </ul>
-
-            <ul class="servises--pagination-srvis">
-              <li class="item pagination-srvis--item">
-                <button
-                  class="
-                    link-button
-                    pagination-srvis--button
-                    link-button--current
-                  "
-                  type="button"
-                >
-                <span class="pagination-servis--btn-lable">
-
-                  Доставка
-                </span>
-                </button>
-              </li>
-              <li class="item pagination-srvis--item">
-                <button
-                  class="link-button pagination-srvis--button"
-                  type="button"
-                >
-                <span class="pagination-servis--btn-lable">
-
-                  Гарантия
-                </span>
-                </button>
-              </li>
-              <li class="item pagination-srvis--item">
-                <button
-                  class="link-button pagination-srvis--button"
-                  type="button"
-                >
-                <span class="pagination-servis--btn-lable">
-
-                  Кредит
-                </span>
-                </button>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
 
-      <!-- о доставке -->
+      <!-- о доставке-------------------------------------------------------------- -->
 
       <div class="container--about-us">
         <div class="about-delivery">
@@ -419,7 +410,7 @@
         </div>
 
         <!-- о нас -->
-        <div class="about-us--conteiner-flex">
+        <div class="about-us--container-flex">
           <section class="about-us">
             <h2 class="title about-us--title">О нас</h2>
             <p>
@@ -453,7 +444,7 @@
             >
           </section>
 
-          <!-- главные контакты -->
+          <!-- главные контакты-------------------------------------------------------------- -->
 
           <section class="mian-contacts">
             <h2 class="title mian-contacts--title">Контакты</h2>
@@ -493,7 +484,7 @@
         </div>
       </div>
 
-      <!-- подписка -->
+      <!-- подписка-------------------------------------------------------------- -->
 
       <section class="appointment">
         <div class="appointment--container">
@@ -533,7 +524,7 @@
       </section>
     </main>
 
-    <!-- футер -->
+    <!-- футер-------------------------------------------------------------- -->
 
     <footer class="main-footer">
       <div class="main-footer--container">
