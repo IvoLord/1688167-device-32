@@ -39,11 +39,11 @@
               <button class="button" type="submit">Найти</button>
             </form>
 
-            <!-- логин -->
+            <!-- логин-------------------------------------------------------------- -->
 
             <div class="navigation-user--login">
-              <a href="#" class="link login--link">Выйти</a>
               <a href="#" class="link login--link">Коля Петухов</a>
+              <a href="#" class="link login--link">Выйти</a>
             </div>
 
             <!-- список решений к покупке-------------------------------------------------------------- -->
@@ -59,12 +59,14 @@
           </div>
 
           <div class="navigation-main">
-            <ul class="list navigation-main--list">
+            <ul class="list navigation-main--list1">
               <li class="item navigation-main--item">
                 <a class="link navigation-main--link" href="catalog.html"
                   >Каталог товаров</a
                 >
               </li>
+            </ul>
+            <ul class="list navigation-main--list2">
               <li class="item navigation-main--item">
                 <a class="link navigation-main--link" href="delivery.html"
                   >Доставка</a
@@ -221,7 +223,7 @@
                 </ul>
               </fieldset>
 
-              <button class="link-button filter--link-button" type="submit">
+              <button class="button button--solid form-items--button" type="submit">
                 Показать
               </button>
             </form>
@@ -237,7 +239,7 @@
             <div class="items--container">
               <h2 class="title sort--title">Сортировка:</h2>
               <form class="sort--form">
-                <fieldset class="form--group">
+                <fieldset class="sort--form-group">
                   <select name="form--select-list">
                     <option class="form--select-item" value="first-popular">
                       Сначала популярные
@@ -280,7 +282,7 @@
                 </a>
                 <dl class="table cards--table">
                   <dt class="title cards--title">Любительская селфи-палка</dt>
-                  <dd class="prise cards--prise">500 ₽</dd>
+                  <dd class="price cards--price">500 ₽</dd>
                 </dl>
               </li>
               <li class="item cards--item">
@@ -299,7 +301,7 @@
                   <dt class="title cards--title">
                     Профессиональная селфи-палка
                   </dt>
-                  <dd class="prise cards--prise">1 500 ₽</dd>
+                  <dd class="price cards--price">1 500 ₽</dd>
                 </dl>
               </li>
               <li class="item cards--item">
@@ -316,7 +318,7 @@
                 </a>
                 <dl class="table cards--table">
                   <dt class="title cards--title">Непотопляемая селфи-палка</dt>
-                  <dd class="prise cards--prise">2 500 ₽</dd>
+                  <dd class="price cards--price">2 500 ₽</dd>
                 </dl>
               </li>
               <li class="item cards--item cards--item--new">
@@ -335,7 +337,7 @@
                   <dt class="title cards--title">
                     Селфи-палка «Следуй за мной»
                   </dt>
-                  <dd class="prise cards--prise">4 900 ₽</dd>
+                  <dd class="price cards--price">4 900 ₽</dd>
                 </dl>
               </li>
             </ul>
@@ -344,7 +346,7 @@
           <!-- управление-------------------------------------------------------------- -->
 
           <div class="pagination">
-            <a class="link-button2 pagination--link-button2" href="#"
+            <a class="button button--border pagination--button" href="#"
               >Загрузить еще</a
             >
 
@@ -422,6 +424,7 @@
               </li>
             </ul>
           </div>
+
           <a
             href="tel:+78128121212"
             class="phone-number main-footer--phone-number"

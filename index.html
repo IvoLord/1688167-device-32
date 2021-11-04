@@ -36,7 +36,7 @@
                 name="search"
                 id="search"
               />
-              <button class="button" type="submit">Найти</button>
+              <button class="search-button" type="submit">Найти</button>
             </form>
 
             <!-- логин-------------------------------------------------------------- -->
@@ -120,7 +120,7 @@
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
                   лазером, замаскированным под стандартную камеру.
                 </p>
-                <a href="#" class="link-button description--link-button"
+                <a href="#" class="button button--solid description--button"
                   >Подробнее</a
                 >
                 <table class="slider-table">
@@ -153,7 +153,7 @@
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не
                   пропускать занятия и соблюдать диету.
                 </p>
-                <a href="#" class="link-button description--link-button"
+                <a href="#" class="button button--solid description--button"
                   >Подробнее</a
                 >
                 <table class="slider-table">
@@ -186,7 +186,7 @@
                   Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                 </p>
-                <a href="#" class="link-button description--link-button"
+                <a href="#" class="button button--solid description--button"
                   >Подробнее</a
                 >
                 <table class="slider-table">
@@ -214,19 +214,19 @@
             </button>
           </div>
 
-          <ol class="pagination slider--pagination">
-            <li class="item pagination--item">
-              <button class="button pagination--button current" type="button">
+          <ol class="photo-pagination slider--photo-pagination-list">
+            <li class="item photo-pagination--item">
+              <button class="button photo-pagination--button active" type="button">
                 <span class="visually-hidden">1 фото</span>
               </button>
             </li>
-            <li class="item pagination--item">
-              <button class="button pagination--button" type="button">
+            <li class="item photo-pagination--item">
+              <button class="button photo-pagination--button" type="button">
                 <span class="visually-hidden">2 фото</span>
               </button>
             </li>
-            <li class="item pagination--item">
-              <button class="button pagination--button" type="button">
+            <li class="item photo-pagination--item">
+              <button class="button photo-pagination--button" type="button">
                 <span class="visually-hidden">3 фото</span>
               </button>
             </li>
@@ -338,37 +338,33 @@
         <div class="container">
           <h2 class="title servises--title visually-hidden">Сервисы</h2>
           <div class="servises--container-flex">
-            <ul class="servises--pagination-srvis">
-              <li class="item pagination-srvis--item">
+            <ul class="servises--pagination-servis">
+              <li class="item pagination-servis--item">
                 <button
                   class="
-                    link-button
-                    pagination-srvis--button
-                    link-button--current
-                  "
+                  button button--solid button--solid--active servises--pagination-button"                  "
                   type="button"
                 >
-                  <span class="pagination-servis--btn-lable"> Доставка </span>
+                  Доставка
                 </button>
               </li>
-              <li class="item pagination-srvis--item">
+              <li class="item pagination-servis--item">
                 <button
-                  class="link-button pagination-srvis--button"
+                  class="button button--solid servises--pagination-button"
                   type="button"
                 >
-                  <span class="pagination-servis--btn-lable"> Гарантия </span>
+                 Гарантия 
                 </button>
               </li>
-              <li class="item pagination-srvis--item">
+              <li class="item pagination-servis--item">
                 <button
-                  class="link-button pagination-srvis--button"
+                  class="button button--solid servises--pagination-button"
                   type="button"
                 >
-                  <span class="pagination-servis--btn-lable"> Кредит </span>
+                 Кредит 
                 </button>
               </li>
             </ul>
-
             <ul class="list servises--list">
               <li class="item servises--item servises--delivery">
                 <h3 class="title servises--title">Доставка</h3>
@@ -439,7 +435,7 @@
               </li>
             </ul>
 
-            <a class="link-button about-us--link-button" href="#"
+            <a class=" button button--solid about-us--button" href="#"
               >Подробнее о нас</a
             >
           </section>
@@ -477,7 +473,7 @@
               </ul>
             </div>
 
-            <a href="#" class="link-button shedule--link-button"
+            <a href="#" class="button button--solid shedule--button"
               >Напишите нам</a
             >
           </section>
@@ -512,7 +508,8 @@
               placeholder="Ваш e-mail"
             />
             <button
-              class="link-button2 appointment--link-button2"
+            
+              class="button button--border appointment--button"
               type="button"
             >
               Подписаться
