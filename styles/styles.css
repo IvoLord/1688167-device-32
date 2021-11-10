@@ -78,6 +78,8 @@ body {
   font-weight: 700;
 }
 
+/* buttons -------------------------------------------------------------------------------------- */
+
 .button {
   box-sizing: border-box;
   position: relative;
@@ -97,6 +99,15 @@ body {
   color: inherit;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+}
+
+.button::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .button--solid {
@@ -126,6 +137,8 @@ body {
   color: #00000030;
 }
 
+/* border ----------------------------------------------------------------------------- */
+
 .button--border {
   font: 16px;
   line-height: 19px;
@@ -154,9 +167,10 @@ body {
 }
 
 .button--border:active::before {
-  background-color: #af4fff;
   border: 3px solid #00000030;
 }
+
+/* round ---------------------------------------------------------------------------------- */
 
 .button--icon-round {
   align-self: center;
@@ -171,6 +185,27 @@ body {
   opacity: 30%;
   margin: 0 auto;
 }
+
+/* link-action ------------------------------------------------------------------------ */
+
+.action {
+  box-sizing: border-box;
+  position: relative;
+  fill: inherit;
+}
+
+.action::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.action:focus::before {
+  border: 5px solid #af4fff;
+  border-radius: 50%;
+}
+
+/* form ---------------------------------------------------------------------------------- */
 
 .form {
   font-family: Rubik;
@@ -855,11 +890,27 @@ body {
   opacity: 20%;
 }
 
+.breadcrumbs--item:last-child::after {
+  content: none;
+}
+
 .main-inner--container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
 }
+
+/* .main-inner--container::before{
+  background-color: #ebebeb;
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+} */
 
 .filter-items--container-title {
   width: 328px;
@@ -881,7 +932,7 @@ body {
 
 .filter-items--container-form {
   padding-left: 60px;
-  padding-top: 12px;
+  padding-top: 71px;
   padding-right: 68px;
   box-sizing: border-box;
   width: 328px;
@@ -906,6 +957,16 @@ body {
   font-weight: 700;
 }
 
+.form-title::before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+  width: 200px;
+}
+
 .form--range-text {
   font-family: Rubik, sans-serif;
   font-size: 15px;
@@ -915,16 +976,19 @@ body {
 
 .form-items--button {
   width: 100%;
+  height: 40px;
 }
 
 /* блок товаров -------------------------------------------------- */
 
 .items--sort {
+  outline: 1px solid red;
   background-color: #ebebeb;
   padding-left: 72px;
 }
 
 .items--container {
+  outline: 1px solid red;
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -937,6 +1001,13 @@ body {
   font-weight: 800;
   line-height: 19px;
   text-transform: uppercase;
+}
+
+.sort-link--container {
+  width: 41px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
 }
 
 .sort--form-group {
