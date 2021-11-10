@@ -900,18 +900,6 @@ body {
   margin: 0 auto;
 }
 
-/* .main-inner--container::before{
-  background-color: #ebebeb;
-  z-index: -1;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-} */
-
 .filter-items--container-title {
   width: 328px;
   background-color: #dcdcdc;
@@ -982,13 +970,11 @@ body {
 /* блок товаров -------------------------------------------------- */
 
 .items--sort {
-  outline: 1px solid red;
   background-color: #ebebeb;
   padding-left: 72px;
 }
 
 .items--container {
-  outline: 1px solid red;
   min-height: 70px;
   display: flex;
   align-items: center;
