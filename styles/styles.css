@@ -47,8 +47,6 @@ html {
 body {
   margin: 0;
   min-width: 1440px;
-  display: flex;
-  flex-direction: column;
   font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -81,6 +79,7 @@ body {
 /* buttons -------------------------------------------------------------------------------------- */
 
 .button {
+  z-index: 0;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -116,9 +115,6 @@ body {
 }
 
 .button--solid::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
   background-color: #ffc700;
   width: 100%;
   height: 8px;
@@ -145,9 +141,6 @@ body {
 }
 
 .button--border::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
   background-color: #00000000;
   border: 3px solid #00000010;
   width: 100%;
@@ -174,7 +167,6 @@ body {
 
 .button--icon-round {
   align-self: center;
-  display: flex;
   width: 40px;
   height: 40px;
   background-color: #dcdcdc50;
@@ -196,7 +188,6 @@ body {
 
 .action::before {
   content: "";
-  display: block;
   position: absolute;
 }
 
@@ -208,7 +199,6 @@ body {
 /* form ---------------------------------------------------------------------------------- */
 
 .form {
-  font-family: Rubik;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -245,29 +235,32 @@ body {
 }
 
 .main-header--container {
+  position: relative;
   width: 1160px;
   min-height: 209px;
   margin: 0 auto;
   background-color: #ffe17f;
   color: #000000;
   box-sizing: border-box;
-  padding: 50px 60px;
+  padding-top: 50px;
   padding-bottom: 38px;
 }
 
-.main-header--logo {
+.main-header--link {
   position: absolute;
-  top: 17px;
-  margin: 0;
+  top: -17px;
+  margin-left: 60px;
 }
 
 .navigation-user {
+  margin: 0 60px;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
 }
 
 .navigation-user--form {
+  box-sizing: border-box;
   position: relative;
   right: 16px;
   width: 516px;
@@ -276,18 +269,22 @@ body {
   margin-right: 24px;
 }
 
-.navigation-user--form:focus {
+.navigation-user--form::before {
+  position: absolute;
+  content: "";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.navigation-user--form:focus::before {
   outline: 2px solid #af4fff;
 }
 
-.navigation-user--form:active {
+.navigation-user--form:active::before {
   outline: 2px solid #000000;
-}
-
-.navigation-user--form:active,
-.navigation-user--form:focus {
-  outline: 2px solid #000000;
-  border-radius: 20px;
 }
 
 .navigation-user--icon-user {
@@ -319,8 +316,7 @@ body {
   color: #000000;
 }
 
-.navigation-user--input-search:active,
-.navigation-user--input-search:focus {
+.navigation-user--input-search:active {
   color: #000000;
 }
 
@@ -374,6 +370,7 @@ body {
   display: flex;
   margin: 0;
   margin-top: 29px;
+  margin-left: 50px;
   padding: 0;
   min-height: 50px;
   align-items: center;
@@ -390,14 +387,33 @@ body {
 }
 
 .link--catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   position: relative;
-  right: 15px;
-  padding: 15px;
+  height: 50px;
+  width: 253px;
+}
+
+.link--catalog:focus::before {
+  z-index: -1;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  content: "";
+  box-sizing: border-box;
+  border: 2px solid #af4fff;
+  outline: none;
+}
+
+.link--catalog:active {
+  border: none;
+  color: #00000030;
 }
 
 .navigation-main--icon-plus {
   position: relative;
-  right: 15px;
   padding: 17px;
   border-radius: 50%;
   border: 2px solid #000000;
@@ -411,6 +427,7 @@ body {
   width: 500px;
   margin: 0;
   margin-top: 29px;
+  margin-right: 50px;
   padding: 0;
   min-height: 50px;
   align-items: center;
@@ -456,10 +473,10 @@ body {
 }
 
 .slider-table {
+  position: relative;
+  right: 20px;
   border-spacing: 20px;
   margin-top: 50px;
-  margin-left: -20px;
-  margin: 50px -20px -20px -20px;
 }
 
 .slider-table th {
@@ -537,22 +554,11 @@ body {
 .servises {
   position: relative;
   margin-top: 69px;
-}
-
-.servises::before {
-  box-sizing: border-box;
-  z-index: -1;
-  position: absolute;
-  content: "";
-  min-height: 275px;
-  height: 100%;
-  width: 100%;
-  background-color: #f0f0f0;
-  top: 113px;
+  background-image: linear-gradient(180deg, #ffffff 100px, #f0f0f0 100px);
 }
 
 .servises--container-flex {
-  padding-top: 100px;
+  padding-top: 80px;
   display: flex;
 }
 
@@ -622,14 +628,13 @@ body {
 
 .servises--pagination-servis::after {
   position: absolute;
-  display: block;
   content: "";
   background: #000000;
   width: 7px;
   height: 319px;
   margin: 0;
   padding: 0;
-  top: -100px;
+  top: -80px;
   left: 280px;
 }
 
@@ -638,7 +643,7 @@ body {
 .container--about-us {
   width: 1160px;
   margin: 0 auto;
-  margin-top: 203px;
+  margin-top: 80px;
   min-height: 936px;
 }
 
