@@ -867,6 +867,11 @@ body {
   background-color: #444444;
 }
 
+.main-footer--logo {
+  height: 36px;
+  width: 145px;
+}
+
 .main-footer--container {
   box-sizing: border-box;
   width: 1160px;
@@ -903,7 +908,7 @@ body {
 
 .main-footer--phone-number {
   font-size: 16px;
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -929,6 +934,49 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 150px;
+}
+
+.main-footer--link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.main-footer--link:hover {
+  color: #ffc700;
+}
+
+.main-footer--link:not(:active):focus {
+  color: #ffffff;
+  outline: 2px solid #af4fff;
+  outline-offset: 10px;
+  border-radius: 10px;
+}
+
+.main-footer--link:active {
+  color: #ffc70030;
+}
+
+.footer-servises--link:hover {
+  text-decoration: underline;
+}
+
+.footer-servises--link:hover {
+  text-decoration: none;
+}
+
+.main-footer--logo-htmlacademy {
+  fill: #ffc700;
+}
+
+.main-footer--link-htmlacademy:hover .main-footer--logo-htmlacademy {
+  fill: #ffffff;
+}
+
+.main-footer--link-htmlacademy:active .main-footer--logo-htmlacademy {
+  fill: #ffffff30;
 }
 
 /* каталог ------------------------------------------------------------*/
