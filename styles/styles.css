@@ -76,6 +76,44 @@ body {
   font-weight: 700;
 }
 
+.icon {
+  fill: #000000;
+}
+
+/* links --------------------------------------------------------------- */
+
+.link-active {
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  /* padding: 0 15px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-active:hover {
+  color: #00000060;
+}
+
+.link-active:focus::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 10px;
+
+  color: #000000;
+  border: 2px solid #af4fff;
+  border-radius: 20px;
+}
+
+.link-active:active {
+  border: none;
+  color: #00000030;
+}
+
 /* buttons -------------------------------------------------------------------------------------- */
 
 .button {
@@ -166,6 +204,7 @@ body {
 /* round ---------------------------------------------------------------------------------- */
 
 .button--icon-round {
+  display: flex;
   align-self: center;
   width: 40px;
   height: 40px;
@@ -175,7 +214,36 @@ body {
 
 .icon--round {
   opacity: 30%;
-  margin: 0 auto;
+}
+
+/* social button ----------------------------------------------------------------------------------- */
+
+.button-social:hover {
+  background-color: #ffc700;
+}
+
+.button-social:hover .icon {
+  opacity: 100%;
+  fill: #444444;
+}
+
+.button-social:focus {
+  background-color: transparent;
+  outline: 5px solid #af4fff;
+}
+
+.button-social:focus .icon {
+  opacity: 100%;
+  fill: #ffffff;
+}
+
+.button-social:active {
+  background-color: #ffc700;
+  outline: none;
+}
+
+.button-social:active .icon {
+  fill: #00000030;
 }
 
 /* link-action ------------------------------------------------------------------------ */
@@ -905,6 +973,10 @@ body {
   margin: 0 auto;
 }
 
+.filter-items {
+  background-color: #ebebeb;
+}
+
 .filter-items--container-title {
   width: 328px;
   background-color: #dcdcdc;
@@ -929,8 +1001,6 @@ body {
   padding-right: 68px;
   box-sizing: border-box;
   width: 328px;
-  height: 100%;
-  background-color: #ebebeb;
 }
 
 .form-items--group {
@@ -995,6 +1065,8 @@ body {
 }
 
 .sort-link--container {
+  display: flex;
+  justify-content: space-between;
   width: 41px;
   margin: 0;
   margin-left: auto;
