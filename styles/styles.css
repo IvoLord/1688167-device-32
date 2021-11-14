@@ -446,8 +446,25 @@ body {
   align-items: center;
 }
 
+.navigation-main--link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navigation-main--link:not(:active):focus {
   outline-offset: 15px;
+}
+
+:not(.link--catalog).navigation-main--link:hover::before {
+  position: absolute;
+  background-color: #000000;
+  content: "";
+  height: 2px;
+  left: 0;
+  right: 4px;
+  bottom: -8px;
 }
 
 .link--catalog {
