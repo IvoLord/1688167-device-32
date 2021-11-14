@@ -850,6 +850,9 @@ body {
 
 .mian-contacts {
   width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .address-box--text {
