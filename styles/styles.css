@@ -382,7 +382,6 @@ body {
 }
 
 .navigation-user--list {
-  outline: 1px solid red;
   align-items: center;
   width: 275px;
   min-height: 21px;
@@ -394,12 +393,10 @@ body {
 }
 
 .navigation-user--item {
-  outline: 1px solid red;
   margin-left: 15px;
 }
 
 .navigation-user--link {
-  outline: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,7 +422,6 @@ body {
 /* navigation-main------------------------------------------------------------------------------------------------- */
 
 .navigation-main {
-  outline: 1px solid red;
   display: flex;
   justify-content: space-between;
   font-family: Raleway, sans-serif;
@@ -443,13 +439,6 @@ body {
   margin-top: 29px;
   margin-left: 50px;
   padding: 0;
-  min-height: 50px;
-  align-items: center;
-}
-
-.navigation-main--link {
-  margin: 0;
-  padding: 0;
 }
 
 .navigation-main--item {
@@ -457,39 +446,39 @@ body {
   align-items: center;
 }
 
-.link--catalog {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  position: relative;
-  height: 50px;
-  width: 253px;
+.navigation-main--link:not(:active):focus {
+  outline-offset: 15px;
 }
 
-.link--catalog:focus::before {
-  z-index: -1;
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  content: "";
+.link--catalog {
+  margin-right: 17px;
+}
+
+/* button--catalog круглая кнопка + ---------------------------------------------------------------------------- */
+.button--catalog {
   box-sizing: border-box;
-  border: 2px solid #af4fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  opacity: 20%;
+  background-image: url(../img/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 16px;
+}
+
+.button--catalog:hover {
+  opacity: 100%;
+  background-image: url(../img/icons/minus.svg);
+}
+
+.button--catalog.link:not(:active):focus {
   outline: none;
 }
 
-.link--catalog:active {
-  border: none;
-  color: #00000030;
-}
-
-.navigation-main--icon-plus {
-  position: relative;
-  padding: 17px;
-  border-radius: 50%;
-  border: 2px solid #000000;
+.button--catalog:active {
   opacity: 30%;
-  vertical-align: middle;
 }
 
 .navigation-main--list2 {
