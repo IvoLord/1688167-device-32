@@ -801,16 +801,13 @@ body {
 .about-us--list {
   margin-left: 20px;
   list-style: disc;
-  color: #ffe17f;
   margin-top: auto;
-  line-height: 20px;
+  line-height: 40px;
+  font-weight: 700;
 }
 
-.about-us--item {
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
+.about-us--item::marker {
+  color: #ffc700;
 }
 
 .about-us--item--color-text {
