@@ -124,7 +124,7 @@ body {
   height: 8px;
 }
 
-.button--solid:focus::before {
+.button--solid:not(:active):focus::before {
   background-color: #af4fff;
 }
 
@@ -148,7 +148,7 @@ body {
   height: 100%;
 }
 
-.button--border:focus {
+.button--border:not(:active):focus {
   border: 5px solid #af4fff;
 }
 
@@ -253,6 +253,18 @@ body {
   background-repeat: no-repeat;
   align-self: center;
   background-position: center;
+}
+
+.decorate--hor-line::before {
+  content: "";
+  display: block;
+  background-color: #000000;
+  width: 80px;
+  height: 7px;
+}
+
+.title.decorate--hor-line::before {
+  margin-bottom: 42px;
 }
 
 /* хедер----------------------------------------------------------------- */
@@ -631,6 +643,7 @@ body {
 .servises {
   position: relative;
   margin-top: 69px;
+  min-height: 388px;
   background-image: linear-gradient(180deg, #ffffff 100px, #f0f0f0 100px);
 }
 
@@ -703,6 +716,18 @@ body {
   width: 280px;
 }
 
+.pagination-button--active {
+  color: #ffe17f;
+  opacity: 100%;
+}
+
+.pagination-button--active::before {
+  background-color: #000000;
+  left: 0;
+  width: 280px;
+  height: 100%;
+}
+
 .servises--pagination-servis::after {
   position: absolute;
   content: "";
@@ -720,18 +745,18 @@ body {
 .container--about-us {
   width: 1160px;
   margin: 0 auto;
-  margin-top: 80px;
-  min-height: 936px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .about-us--container-flex {
+  min-height: 560px;
   display: flex;
 }
 
 .about-delivery {
   display: flex;
   min-height: 100px;
-  margin-top: 90px;
   margin-bottom: 90px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -768,12 +793,17 @@ body {
 .about-us {
   width: 560px;
   margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-us--list {
   margin-left: 20px;
   list-style: disc;
   color: #ffe17f;
+  margin-top: auto;
+  line-height: 20px;
 }
 
 .about-us--item {
@@ -788,6 +818,7 @@ body {
 }
 
 .about-us--button {
+  margin-top: 52px;
   height: 50px;
   width: 260px;
 }
@@ -807,10 +838,11 @@ body {
   font-style: normal;
 }
 
-.shedule--button {
-  height: 50px;
-  width: 260px;
+.mian-contacts--shedule {
+  margin-top: auto;
 }
+
+/* пдписка ------------------------------------------------------------------------------------------------------------- */
 
 .appointment {
   min-height: 421px;
@@ -853,6 +885,16 @@ body {
 .appointment--button {
   width: 260px;
   height: 55px;
+}
+
+.appointment--button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.appointment--button:active {
+  color: #ffffff30;
+  background-color: #000000;
 }
 
 .appointment--its-free {
@@ -928,13 +970,9 @@ body {
   margin-top: 49px;
 }
 
-.main-footer--container-social::before {
-  content: "";
-  display: block;
+.main-footer--container-social.decorate--hor-line::before {
   margin-right: 170px;
   background-color: #ffc700;
-  width: 80px;
-  height: 7px;
 }
 
 .main-footer--list {
