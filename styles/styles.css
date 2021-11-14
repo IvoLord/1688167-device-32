@@ -540,9 +540,18 @@ body {
 
 /* слайдер-------------------------------------------------------------------------- */
 
+.slider {
+  position: relative;
+}
+
 .slider--item {
   display: flex;
+  justify-content: space-between;
   min-height: 560px;
+}
+
+.item--description {
+  width: 560px;
 }
 
 .description--title {
@@ -579,12 +588,51 @@ body {
   line-height: 30px;
 }
 
-.slider--photo-pagination-list {
+.slider--photo-buttons {
+  position: absolute;
+  content: "";
+  top: 250px;
+  left: 17px;
   display: flex;
+  width: 522px;
   justify-content: space-between;
-  width: 80px;
-  list-style: none;
 }
+
+.slider--photo-pagination-list {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 210px;
+  width: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photo-pagination--item:not(:last-child) {
+  margin-right: 11px;
+}
+
+/* кнопки слайдера --------------------------------------------------------------- */
+
+.photo-buttons--button:hover {
+  opacity: 60%;
+}
+
+.photo-buttons--button:not(:active):focus {
+  opacity: 100%;
+  outline: 2px solid #af4fff;
+  outline-offset: 10px;
+  border-radius: 1px;
+}
+
+.photo-buttons--button:active {
+  opacity: 30%;
+}
+
+/* пагинация слайдера ---------- */
 
 .photo-pagination--button {
   box-sizing: border-box;
@@ -604,6 +652,7 @@ body {
   min-height: 253px;
   margin: 0;
   padding: 0;
+  padding-top: 70px;
 }
 
 .categories--list {
