@@ -606,6 +606,22 @@ body {
   padding: 0;
 }
 
+.categories--list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categories--item {
+  width: 160px;
+  font-family: Raleway, sans-serif;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+
 .categories--img-container {
   display: flex;
   background-color: #ffe17f;
@@ -622,20 +638,32 @@ body {
   align-self: flex-end;
 }
 
-.categories--list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/* категории действие ------------------------------------------------------------------------------------------------- */
+
+.categories--link:hover {
+  opacity: 100%;
 }
 
-.categories--item {
-  width: 160px;
-  font-family: Raleway, sans-serif;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  font-weight: 800;
+.categories--item:hover .categories--img-container {
+  background-color: #ffc700;
+}
+
+.categories--item:not(:active):focus-within .categories--img-container {
+  outline: 5px solid #af4fff;
+}
+
+.categories--item:not(:active):focus-within .categories--link {
+  outline: none;
+  color: #af4fff;
+}
+
+.categories--item:active .categories--img-container {
+  outline: none;
+}
+
+.categories--item:active .categories--icon,
+.categories--item:active .categories--link {
+  opacity: 30%;
 }
 
 /* сервисы-------------------------------------------------------------------- */
@@ -1215,7 +1243,7 @@ body {
 }
 
 .pagination--button {
-  width: 754px;
+  width: 100%;
   min-height: 49px;
 }
 
