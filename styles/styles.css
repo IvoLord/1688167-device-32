@@ -242,6 +242,11 @@ body {
 
 /* link-action ------------------------------------------------------------------------ */
 
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* form ---------------------------------------------------------------------------------- */
 
 .form {
@@ -254,11 +259,6 @@ body {
 .form--input {
   border: 0;
   background-color: #00000000;
-}
-
-.link {
-  color: inherit;
-  text-decoration: none;
 }
 
 .title {
