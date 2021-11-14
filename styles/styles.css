@@ -80,40 +80,6 @@ body {
   fill: #000000;
 }
 
-/* links --------------------------------------------------------------- */
-
-.link-active {
-  position: relative;
-  z-index: 0;
-  box-sizing: border-box;
-  /* padding: 0 15px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.link-active:hover {
-  color: #00000060;
-}
-
-.link-active:focus::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 0 10px;
-
-  color: #000000;
-  border: 2px solid #af4fff;
-  border-radius: 20px;
-}
-
-.link-active:active {
-  border: none;
-  color: #00000030;
-}
-
 /* buttons -------------------------------------------------------------------------------------- */
 
 .button {
@@ -247,6 +213,21 @@ body {
   text-decoration: none;
 }
 
+.link:hover {
+  opacity: 60%;
+}
+
+.link:not(:active):focus {
+  opacity: 100%;
+  outline: 2px solid #af4fff;
+  outline-offset: 10px;
+  border-radius: 20px;
+}
+
+.link:active {
+  opacity: 30%;
+}
+
 /* form ---------------------------------------------------------------------------------- */
 
 .form {
@@ -297,6 +278,8 @@ body {
   top: -17px;
   margin-left: 60px;
 }
+
+/* navigation-user --------------------------------------------------------------------------------------------------- */
 
 .navigation-user {
   margin: 0 60px;
@@ -373,11 +356,33 @@ body {
   min-height: 21px;
 }
 
+/* login--link ----------------------------------------------------------------------------------------------------- */
+
+.login--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login--link::before {
+  content: "";
+  background-image: url(../img/icons/user.svg);
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  height: 13px;
+  width: 12px;
+}
+
 .login--link + .login--link {
   margin-left: 30px;
 }
 
+.login--link + .login--link::before {
+  content: none;
+}
+
 .navigation-user--list {
+  outline: 1px solid red;
   align-items: center;
   width: 275px;
   min-height: 21px;
@@ -389,18 +394,38 @@ body {
 }
 
 .navigation-user--item {
+  outline: 1px solid red;
   margin-left: 15px;
 }
 
-.navigation-user--icon-compare {
-  margin-right: 10px;
+.navigation-user--link {
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navigation-user--icon-chart {
-  margin-right: 10px;
+.navigation-user--link--compare::before {
+  content: "";
+  background-image: url(../img/icons/compare.svg);
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  height: 12px;
+  width: 10px;
 }
+.navigation-user--link--chart::before {
+  content: "";
+  background-image: url(../img/icons/cart.svg);
+  background-repeat: no-repeat;
+  margin-right: 12px;
+  height: 16px;
+  width: 16px;
+}
+
+/* navigation-main------------------------------------------------------------------------------------------------- */
 
 .navigation-main {
+  outline: 1px solid red;
   display: flex;
   justify-content: space-between;
   font-family: Raleway, sans-serif;
