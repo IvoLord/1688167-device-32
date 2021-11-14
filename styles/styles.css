@@ -176,28 +176,22 @@ body {
 .button--border {
   font: 16px;
   line-height: 19px;
-}
-
-.button--border::before {
   background-color: #00000000;
   border: 3px solid #00000010;
   width: 100%;
   height: 100%;
 }
 
-.button--border:focus::before {
+.button--border:focus {
   border: 5px solid #af4fff;
 }
 
-.button--border:hover::before {
+.button--border:hover {
   border: 3px solid #000000;
 }
 
 .button--border:active {
   color: #00000030;
-}
-
-.button--border:active::before {
   border: 3px solid #00000030;
 }
 
@@ -247,22 +241,6 @@ body {
 }
 
 /* link-action ------------------------------------------------------------------------ */
-
-.action {
-  box-sizing: border-box;
-  position: relative;
-  fill: inherit;
-}
-
-.action::before {
-  content: "";
-  position: absolute;
-}
-
-.action:focus::before {
-  border: 5px solid #af4fff;
-  border-radius: 50%;
-}
 
 /* form ---------------------------------------------------------------------------------- */
 
@@ -936,6 +914,8 @@ body {
   min-width: 150px;
 }
 
+/* main-footer--link =---------------------------------------------------------------------------------------- */
+
 .main-footer--link {
   position: relative;
   display: flex;
@@ -979,7 +959,7 @@ body {
   fill: #ffffff30;
 }
 
-/* каталог ------------------------------------------------------------*/
+/* каталог ------------------------------------------------------------------------------------------------*/
 .inner--header {
   width: 1160px;
   margin: 0 auto;
