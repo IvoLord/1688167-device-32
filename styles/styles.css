@@ -483,7 +483,7 @@ body {
   margin-right: 17px;
 }
 
-/* button--catalog круглая кнопка + ---------------------------------------------------------------------------- */
+/* button--catalog круглая кнопка +           ----- */
 .button--catalog {
   box-sizing: border-box;
   height: 50px;
@@ -602,7 +602,7 @@ body {
   position: absolute;
   display: flex;
   right: 0;
-  bottom: 210px;
+  bottom: 205px;
   width: 200px;
   flex-wrap: wrap;
   justify-content: center;
@@ -615,7 +615,7 @@ body {
   margin-right: 11px;
 }
 
-/* кнопки слайдера --------------------------------------------------------------- */
+/* активность кнопок слайдера           ----- */
 
 .photo-buttons--button:hover {
   opacity: 60%;
@@ -632,7 +632,7 @@ body {
   opacity: 30%;
 }
 
-/* пагинация слайдера ---------- */
+/* активность пагинация слайдера           ----- */
 
 .photo-pagination--button {
   box-sizing: border-box;
@@ -640,6 +640,23 @@ body {
   border-radius: 50%;
   height: 12px;
   width: 12px;
+}
+
+.photo-pagination--button:hover {
+  opacity: 60%;
+}
+
+.photo-pagination--button:not(active):focus {
+  border-color: #af4fff;
+  opacity: 100%;
+}
+
+.photo-pagination--button:active {
+  opacity: 30%;
+}
+.photo-pagination--button:checked {
+  background-color: #000000;
+  opacity: 100%;
 }
 
 .photo-pagination--button.active {
@@ -687,7 +704,7 @@ body {
   align-self: flex-end;
 }
 
-/* категории действие ------------------------------------------------------------------------------------------------- */
+/* категории действие           ----- */
 
 .categories--link:hover {
   opacity: 100%;
@@ -777,6 +794,8 @@ body {
   width: 280px;
 }
 
+/* активноть плашек сервисов          ----- */
+
 .servises--pagination-button {
   width: 160px;
   min-height: 40px;
@@ -848,6 +867,7 @@ body {
 .button-info {
   margin-right: 30px;
 }
+
 .about-delivery--icon-container {
   display: flex;
   min-width: 125px;
@@ -865,7 +885,39 @@ body {
   width: 600px;
   margin: 0 auto;
   min-height: inherit;
+  width: 100%;
 }
+
+/* about-delivery активность          ------ */
+
+.about-delivery--link:hover {
+  opacity: 100%;
+}
+
+.about-delivery--link:active {
+  opacity: 30%;
+}
+
+.about-delivery:hover .about-delivery--icon-container,
+.about-delivery:hover .categories--icon-info {
+  background-color: #ffc700;
+  opacity: 100%;
+}
+
+.about-delivery:not(:active):focus-within {
+  outline: 5px solid #af4fff;
+}
+
+.about-delivery--link:not(:active):focus {
+  outline: none;
+}
+
+.about-delivery:active .about-delivery--icon,
+.about-delivery:active .categories--icon-info {
+  opacity: 30%;
+}
+
+/* раздел about-us          ----- */
 
 .about-us {
   width: 560px;
