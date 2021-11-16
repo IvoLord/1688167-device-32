@@ -80,6 +80,52 @@ body {
   fill: #000000;
 }
 
+/* checkbox  radio       ----- */
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 37px;
+}
+
+.control--mark {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
+
+.control--input[type="checkbox"] + .control--mark {
+  border-radius: 3px;
+}
+
+.control--input[type="radio"] + .control--mark {
+  border-radius: 50%;
+}
+
+.control--input[type="checkbox"]:checked + .control--mark::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icons/tick.svg);
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+}
+
+.control--input[type="radio"]:checked + .control--mark::before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
 /* buttons -------------------------------------------------------------------------------------- */
 
 .button {
@@ -1247,6 +1293,9 @@ body {
   margin: 0 auto;
 }
 
+.form-items--list {
+  line-height: 38px;
+}
 .filter-items {
   background-color: #ebebeb;
 }
@@ -1294,7 +1343,7 @@ body {
   font-weight: 700;
 }
 
-/* дек линия          ----- */
+/* декор линия          ----- */
 .form-title::before {
   content: "";
   display: block;
