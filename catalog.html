@@ -168,20 +168,51 @@
                 <legend class="form-title form-items--group-title">
                   Стоимость
                 </legend>
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden"
-                    >Изменить максимальную цену</span
-                  >
-                </button>
-                <label class="range-text form--range-text">
-                  >от<input type="number" name="min-price"
-                /></label>
-                <label class="range-text form--range-text"
-                  >до<input type="number" name="max-price"
-                /></label>
+
+                <div class="form--range">
+                  <div class="range--scale">
+                    <div class="range--bar" style="left: 0px; width: 119px">
+                      <button class="range--toggle toggle--min" type="button">
+                        <span class="visually-hidden"
+                          >Изменить минимальную цену</span
+                        >
+                      </button>
+                      <button class="range--toggle toggle--max" type="button">
+                        <span class="visually-hidden"
+                          >Изменить максимальную цену</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range--wraper-inputs">
+                    <label
+                      class="
+                        range-text
+                        form--range-text
+                        wraper-inputs--range-text
+                      "
+                    >
+                      от<input
+                        class="range-text--input"
+                        type="number"
+                        name="min-price"
+                        value="0"
+                    /></label>
+                    <label
+                      class="
+                        range-text
+                        form--range-text
+                        wraper-inputs--range-text
+                      "
+                      >до<input
+                        class="input range-text--input"
+                        type="number"
+                        name="max-price"
+                        value="5000"
+                    /></label>
+                  </div>
+                </div>
               </fieldset>
 
               <fieldset class="group form-items--group">

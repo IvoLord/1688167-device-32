@@ -1294,6 +1294,7 @@ body {
   font-weight: 700;
 }
 
+/* дек линия          ----- */
 .form-title::before {
   content: "";
   display: block;
@@ -1308,12 +1309,101 @@ body {
   font-family: Rubik, sans-serif;
   font-size: 15px;
   line-height: 18px;
-  opacity: 0.3;
 }
 
 .form-items--button {
   width: 100%;
   height: 40px;
+}
+
+.form--range {
+  width: 200px;
+}
+
+.range--scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: #dcdcdc;
+}
+
+.range--bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+.range--toggle {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  background-color: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  top: -8px;
+}
+
+.range--toggle:not(:active):focus {
+  outline: none;
+  border-color: #af4fff;
+}
+
+.range--toggle:active {
+  background-color: #000000;
+}
+
+.toggle--min {
+  left: -9px;
+}
+.toggle--max {
+  right: -9px;
+}
+.range--wraper-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wraper-inputs--range-text {
+  display: flex;
+  color: #00000030;
+}
+
+.range-text--input {
+  width: 75px;
+  min-height: 18px;
+  padding: 0 2px;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  color: inherit;
+}
+
+.wraper-inputs--range-text:not(:active):focus-within {
+  color: #af4fff;
+  outline: none;
+}
+
+.range-text--input:not(:active):focus {
+  color: inherit;
+  outline: none;
+}
+
+.wraper-inputs--range-text:active {
+  color: #000000;
+  outline: none;
+}
+
+.range-text--input:active {
+  color: inherit;
+  outline: none;
+}
+
+.range-text--input::-webkit-outer-spin-button,
+.range-text--input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 /* блок товаров -------------------------------------------------- */
