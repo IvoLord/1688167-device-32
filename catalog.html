@@ -328,16 +328,15 @@
             <div class="items--container">
               <h2 class="title sort--title">Сортировка:</h2>
               <form class="sort--form">
-                <fieldset class="sort--form-group">
-                  <select name="form--select-list">
-                    <option class="form--select-item" value="first-popular">
-                      Сначала популярные
-                    </option>
-                    <option class="form--select-item" value="first-popular">
-                      Сначала дешевые
-                    </option>
-                  </select>
-                </fieldset>
+                <label class="visually-hidden" for="sorting">Сортировка</label>
+                <select class="form--select-list" id="sorting">
+                  <option class="form--select-item" value="first-popular">
+                    Сначала популярные
+                  </option>
+                  <option class="form--select-item" value="first-popular">
+                    Сначала дешевые
+                  </option>
+                </select>
 
                 <button class="visually-hidden" type="submit">
                   Отсортировать продукты

@@ -515,6 +515,7 @@ body {
   height: 12px;
   width: 10px;
 }
+
 .navigation-user--link--chart::before {
   content: "";
   background-image: url(../img/icons/cart.svg);
@@ -577,6 +578,7 @@ body {
 }
 
 /* button--catalog круглая кнопка +           ----- */
+
 .button--catalog {
   box-sizing: border-box;
   height: 50px;
@@ -747,6 +749,7 @@ body {
 .photo-pagination--button:active {
   opacity: 30%;
 }
+
 .photo-pagination--button:checked {
   background-color: #000000;
   opacity: 100%;
@@ -843,6 +846,7 @@ body {
   margin-left: 116px;
   width: 876px;
 }
+
 .servises--item {
   background-repeat: no-repeat;
   background-position: right;
@@ -1391,9 +1395,7 @@ body {
   height: 40px;
 }
 
-.form--range {
-  width: 200px;
-}
+/* рендж ругулировка          ----- */
 
 .range--scale {
   position: relative;
@@ -1501,7 +1503,44 @@ body {
   font-weight: 800;
   line-height: 19px;
   text-transform: uppercase;
+  margin-right: 50px;
 }
+
+/* список сортировки          ----- */
+
+.form--select-list {
+  width: 217px;
+  height: 30px;
+  border: none;
+  font: inherit;
+  font-size: 16px;
+  background-color: transparent;
+  appearance: none;
+  background-image: url("../img/icons/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 11px 6px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.form--select-list:hover {
+  opacity: 60%;
+}
+
+.form--select-list:not(:active):focus {
+  outline: 5px solid #af4fff;
+}
+
+.form--select-list:focus-visible {
+  outline: none;
+}
+
+.form--select-list:active {
+  opacity: 30%;
+}
+
+/*          ----- */
 
 .sort-link--container {
   display: flex;
@@ -1554,6 +1593,8 @@ body {
   font-family: Rubik, sans-serif;
   flex-grow: 1;
 }
+
+/* pagination         ----- */
 
 .pagination {
   margin-left: 72px;
@@ -1640,7 +1681,6 @@ body {
   height: 100%;
   width: 100%;
   padding: 3px 8px;
-
   outline: 5px solid #af4fff;
 }
 
