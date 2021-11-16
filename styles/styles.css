@@ -84,7 +84,8 @@ body {
 
 .control {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   padding-left: 37px;
 }
 
@@ -93,7 +94,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
   left: 0;
   height: 20px;
   width: 20px;
@@ -1252,6 +1252,7 @@ body {
 }
 
 /* каталог ------------------------------------------------------------------------------------------------*/
+
 .inner--header {
   width: 1160px;
   margin: 0 auto;
@@ -1260,7 +1261,6 @@ body {
 .inner-header--breadcrumbs {
   font-size: 16px;
   line-height: 19px;
-  opacity: 0.6;
   margin-bottom: 49px;
 }
 
@@ -1268,6 +1268,8 @@ body {
   margin-top: 37px;
   margin-bottom: 14px;
 }
+
+/* breadcrumbs         ----- */
 
 .breadcrumbs--list {
   display: flex;
@@ -1286,6 +1288,30 @@ body {
 .breadcrumbs--item:last-child::after {
   content: none;
 }
+
+.breadcrumbs-link {
+  opacity: 100%;
+  color: #00000060;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 100%;
+  color: #000000;
+}
+
+.breadcrumbs-link:not(:active):focus {
+  outline: 5px solid #af4fff;
+  outline-offset: 5px;
+  opacity: 100%;
+  color: #00000060;
+  border-radius: 0;
+}
+
+.breadcrumbs-link:active {
+  color: #00000030;
+}
+
+/*          ----- */
 
 .main-inner--container {
   display: flex;
@@ -1541,8 +1567,8 @@ body {
 .select-pagination {
   margin: 0;
   padding: 0;
-  padding-left: 29px;
-  padding-right: 30px;
+  /* padding-left: 29px;
+  padding-right: 30px; */
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -1561,17 +1587,63 @@ body {
   min-width: 169px;
   font-size: 16px;
   line-height: 19px;
-  opacity: 0.3;
+  /* opacity: 0.3; */
   margin: 0;
   padding: 0;
 }
 
-.select-pagination--link--prev,
-.select-pagination--link--next {
-  font-family: Raleway, sans-serif;
-  font-size: 16px;
+/* кнопки пагинации списка товаров          ----- */
+
+.select-pagination--button {
   line-height: 19px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+  background-color: #ebebeb;
+  box-sizing: border-box;
+  height: 70px;
+  width: 127px;
+}
+
+.select-pagination--button:hover {
+  background-color: #dcdcdc;
+}
+
+.select-pagination--button:not(:active):focus {
+  outline: none;
+  border: 5px solid #af4fff;
+}
+
+.select-pagination--button:active {
+  background-color: #dcdcdc;
+  color: #00000030;
+}
+
+/* списко страниц         ------ */
+
+.select-pagination-link {
+  color: #00000030;
+}
+
+.select-pagination-link:hover {
+  color: #000000;
+}
+
+.select-pagination-link:not(:active):focus {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.select-pagination-link:not(:active):focus:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 3px 8px;
+
+  outline: 5px solid #af4fff;
+}
+
+.select-pagination-link:active {
+  color: #00000010;
 }
