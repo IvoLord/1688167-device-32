@@ -358,7 +358,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor
 }
 
 .chart-item--img {
@@ -374,7 +373,7 @@ body {
   opacity: 60%;
 }
 
-.chart-container:focus-within{
+.chart-container:focus-within {
   outline: none;
 }
 
@@ -1276,12 +1275,39 @@ body {
 }
 
 .appointment--input {
+  padding: 0 20px;
   border-bottom: 3px solid #00000010;
   width: 595px;
   font-size: 18px;
   line-height: 30px;
   color: #44444450;
-  opacity: 0.5;
+}
+
+.appointment--input:hover {
+  color: #44444470;
+  background-color: transparent;
+  border-color: #00000020;
+}
+
+.appointment--input:focus {
+  background-color: #dcdcdc;
+}
+
+.appointment--input:active {
+  color: #444444;
+  background-color: transparent;
+  border-color: #000000;
+}
+
+.appointment--input:focus-visible {
+  color: #444444;
+  border-color: #000000;
+  background-color: transparent;
+  outline: none;
+}
+
+.appointment--input--error {
+  border-color: #ff3d3d;
 }
 
 .appointment--button {
