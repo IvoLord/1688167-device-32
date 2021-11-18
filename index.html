@@ -93,7 +93,7 @@
                   >Корзина</a
                 >
 
-                <div class="popover popover--chart">
+                <div class="popover popover--chart popover--open">
                   <button
                     class="popover--close-button button button--light"
                   ></button>
@@ -1010,5 +1010,111 @@
         </div>
       </div>
     </footer>
+
+    <!-- модальное окно --------------------------------------------------------------------------- -->
+
+    <div class="modal--container modal--container--close">
+      <div class="modal modal--order">
+        <button class="button modal--close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal--content">
+          <h2 class="modal--title">Доставка под заказ</h2>
+          <form
+            class="order--form"
+            action="http://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <fieldset class="form-items--group order-form--privat">
+              <label for="input--name"
+                ><span class="order-form--label-title">Ваше имя:</span>
+                <input
+                  class="order-form--input input--name"
+                  id="input--name"
+                  type="text"
+                  placeholder="Имя Фамилия"
+                />
+                <span class="order-form--label-after-info"
+                  >Пожалуйста, представьтесь</span
+                >
+              </label>
+
+              <label for="input--email"
+                ><span class="order-form--label-title">Ваш e-mail:</span>
+                <input
+                  class="order-form--input input--email"
+                  type="email"
+                  id="input--email"
+                  placeholder="Введите e-mail"
+                  value="krasotka92@mail.ru"
+                />
+                <span class="order-form--label-after-info"
+                  >Забавный у вас адрес</span
+                >
+              </label>
+            </fieldset>
+
+            <fieldset class="form-items--group order-form--order">
+              <label for="input--type-order">
+                <span class="order-form--label-title">
+                  Что нужно привезти:</span
+                >
+                <input
+                  class="order-form--input input--type-order"
+                  id="input--type-order"
+                  type="text"
+                  placeholder="В свободной форме"
+                />
+              </label>
+
+              <label for="input--type-count">
+                <div class="container--label">
+                  <span class="order-form--label-title"> Количесвтво: </span>
+                  <button class="button button--icon-round input--button-info">
+                    <svg
+                      class="icon icon--round input--icon-info"
+                      aria-hidden="true"
+                      focusable="false"
+                      width="2"
+                      height="12"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 2 12"
+                    >
+                      <path d="M2 0H0v2h2V0zM2 4H0v8h2V4z" />
+                    </svg>
+                    <span class="visually-hidden">Информация</span>
+                  </button>
+                </div>
+                <div class="container--input-count">
+                  <button
+                    class="button input--mark input--mark-minus"
+                    type="button"
+                  ></button>
+
+                  <input
+                    class="input--type-count"
+                    type="number"
+                    id="input--type-count"
+                    value="1"
+                  />
+
+                  <button
+                    class="button input--mark input--mark-plus"
+                    type="button"
+                  ></button>
+                </div>
+              </label>
+            </fieldset>
+
+            <button
+              class="button button--solid order-form--button"
+              type="submit"
+            >
+              Отправить
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
