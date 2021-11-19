@@ -52,11 +52,7 @@
               />
 
               <button
-                class="
-                  button button--border
-                  user-form--search-button
-                  visually-hidden
-                "
+                class="button button--border user-form--search-button"
                 type="submit"
               >
                 Найти
@@ -96,6 +92,7 @@
                 <div class="popover popover--chart popover--open">
                   <button
                     class="popover--close-button button button--light"
+                    type="button"
                   ></button>
                   <div class="popover--content">
                     <h2 class="popover--title visually-hidden">Корзина</h2>
@@ -1013,6 +1010,9 @@
 
     <!-- модальное окно --------------------------------------------------------------------------- -->
 
+    <!-- класс выключения модального окна -->
+    <!-- modal--container--close -->
+
     <div class="modal--container modal--container--close">
       <div class="modal modal--order">
         <button class="button modal--close-button" type="button">
@@ -1033,6 +1033,7 @@
                   id="input--name"
                   type="text"
                   placeholder="Имя Фамилия"
+                  required
                 />
                 <span class="order-form--label-after-info"
                   >Пожалуйста, представьтесь</span
@@ -1045,8 +1046,8 @@
                   class="order-form--input input--email"
                   type="email"
                   id="input--email"
-                  placeholder="Введите e-mail"
-                  value="krasotka92@mail.ru"
+                  placeholder="krasotka92@mail.ru"
+                  required
                 />
                 <span class="order-form--label-after-info"
                   >Забавный у вас адрес</span
@@ -1059,18 +1060,22 @@
                 <span class="order-form--label-title">
                   Что нужно привезти:</span
                 >
-                <input
+                <textarea
                   class="order-form--input input--type-order"
-                  id="input--type-order"
-                  type="text"
+                  name="input--type-order"
                   placeholder="В свободной форме"
-                />
+                  textarea
+                  style="resize: none"
+                ></textarea>
               </label>
 
               <label for="input--type-count">
                 <div class="container--label">
-                  <span class="order-form--label-title"> Количесвтво: </span>
-                  <button class="button button--icon-round input--button-info">
+                  <span class="order-form--label-title"> Количество: </span>
+                  <button
+                    class="button button--icon-round input--button-info"
+                    type="button"
+                  >
                     <svg
                       class="icon icon--round input--icon-info"
                       aria-hidden="true"

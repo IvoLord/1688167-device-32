@@ -591,6 +591,14 @@ body {
   color: #000000;
 }
 
+.navigation-user--input-search:placeholder-shown + .user-form--search-button {
+  display: none;
+}
+
+.navigation-user--input-search:focus-visible {
+  outline: none;
+}
+
 /* действия кнопки поиска         ----- */
 
 .user-form--search-button {
@@ -619,12 +627,15 @@ body {
   border-radius: 0 20px 20px 0;
 }
 
-.user-form--search-button:not(:active):focus {
+.user-form--search-button:not(:active):focus,
+.navigation-user--input-search:focus-within + .user-form--search-button {
   border: none;
   outline: none;
 }
 
-.user-form--search-button:not(:active):focus::before {
+.user-form--search-button:not(:active):focus::before,
+.navigation-user--input-search:focus-within
+  + .user-form--search-button::before {
   outline: none;
   box-sizing: border-box;
   border: 2px solid #af4fff;
@@ -1807,6 +1818,46 @@ body {
   padding-bottom: 44px;
 }
 
+/*  взаимодействия с карточками         -----*/
+
+.cards--item {
+  position: relative;
+}
+
+.cards--item:hover .cards--img {
+  opacity: 80%;
+}
+
+.cards--item:hover .cards--button {
+  display: flex;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 150px;
+  position: absolute;
+}
+
+.cards--item:focus-within .cards--img {
+  /* opacity: 80%; */
+  outline: 5px solid #af4fff;
+}
+
+.cards--item:focus-within .cards--table {
+  color: #af4fff;
+}
+
+.cards--item:focus-within .cards--price {
+  color: #af4fff;
+}
+
+/*          ----- */
+
+.cards--button {
+  width: 160px;
+  height: 40px;
+  display: none;
+}
+
 .cards--list {
   display: grid;
   grid-template-columns: repeat(2, 360px);
@@ -1831,10 +1882,10 @@ body {
 }
 
 .cards--price {
+  color: #444444;
   margin: 0;
   padding: 0;
   text-align: end;
-  font-family: Rubik, sans-serif;
   flex-grow: 1;
 }
 
@@ -1852,8 +1903,6 @@ body {
 .select-pagination {
   margin: 0;
   padding: 0;
-  /* padding-left: 29px;
-  padding-right: 30px; */
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -2077,6 +2126,7 @@ body {
 }
 
 .input--type-order {
+  padding-top: 17px;
   width: 560px;
 }
 
