@@ -1600,6 +1600,7 @@ body {
 }
 
 /* декор линия          ----- */
+
 .form-title::before {
   content: "";
   display: block;
@@ -1708,6 +1709,40 @@ body {
   appearance: none;
   margin: 0;
 }
+
+/* активность инпутов в форме         ------ */
+
+.control .control--input:not(:checked) + .control--mark {
+  opacity: 20%;
+}
+
+.control:hover .control--input:checked + .control--mark,
+.control:hover .control--input:checked + .control--mark + .control--label {
+  opacity: 50%;
+}
+
+.control:focus-within .control--input:checked + .control--mark,
+.control:focus-within
+  .control--input:checked
+  + .control--mark
+  + .control--label {
+  color: #af4fff;
+  border-color: #af4fff;
+}
+
+.control:focus-within
+  .control--input[type="checkbox"]:checked
+  + .control--mark::before {
+  background-image: url("../img/icons/tick-focus.svg");
+}
+
+.control:focus-within
+  .control--input[type="radio"]:checked
+  + .control--mark::before {
+  background-color: #af4fff;
+}
+
+/*  */
 
 /* блок товаров -------------------------------------------------- */
 
@@ -1838,7 +1873,6 @@ body {
 }
 
 .cards--item:focus-within .cards--img {
-  /* opacity: 80%; */
   outline: 5px solid #af4fff;
 }
 
