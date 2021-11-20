@@ -1503,6 +1503,7 @@ body {
 
 .breadcrumbs--list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs--item {
@@ -1545,27 +1546,26 @@ body {
 
 .main-inner--container {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
 }
 
-.form-items--list {
-  line-height: 38px;
-}
 .filter-items {
+  flex-grow: 1;
   background-color: #ebebeb;
 }
 
 .filter-items--container-title {
-  width: 328px;
   background-color: #dcdcdc;
-  padding-left: 60px;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .filter-item--title {
+  box-sizing: border-box;
+  display: block;
+  width: 328px;
   margin: 0;
   padding: 0;
+  padding-left: 68px;
   font-family: Raleway, sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -1575,11 +1575,16 @@ body {
 }
 
 .filter-items--container-form {
-  padding-left: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-item--form-items {
   padding-top: 71px;
   padding-right: 68px;
   box-sizing: border-box;
   width: 328px;
+  padding-left: 60px;
 }
 
 .form-items--group {
@@ -1615,6 +1620,10 @@ body {
   font-family: Rubik, sans-serif;
   font-size: 15px;
   line-height: 18px;
+}
+
+.form-items--list {
+  line-height: 38px;
 }
 
 .form-items--button {
@@ -1742,18 +1751,20 @@ body {
   background-color: #af4fff;
 }
 
-/*  */
-
 /* блок товаров -------------------------------------------------- */
+
+.items {
+  flex-grow: 1;
+}
 
 .items--sort {
   background-color: #ebebeb;
-  left: 0;
-  right: 0;
-  padding-left: 72px;
 }
 
 .items--container {
+  box-sizing: border-box;
+  padding-left: 72px;
+  width: 832px;
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -1850,10 +1861,16 @@ body {
 .items--cards {
   padding-left: 72px;
   padding-top: 69px;
-  padding-bottom: 44px;
+  padding-bottom: 77px;
 }
 
 /*  взаимодействия с карточками         -----*/
+
+.cards--list {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px;
+}
 
 .cards--item {
   position: relative;
@@ -1892,12 +1909,6 @@ body {
   display: none;
 }
 
-.cards--list {
-  display: grid;
-  grid-template-columns: repeat(2, 360px);
-  gap: 40px;
-}
-
 .cards--table {
   display: flex;
   margin: 0;
@@ -1926,7 +1937,9 @@ body {
 /* pagination         ----- */
 
 .pagination {
-  margin-left: 72px;
+  margin-top: 44px;
+  width: 760px;
+  box-sizing: border-box;
 }
 
 .pagination--button {
@@ -1942,7 +1955,6 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 77px;
   margin-top: 51px;
   width: 760px;
   min-height: 70px;
@@ -1955,7 +1967,6 @@ body {
   min-width: 169px;
   font-size: 16px;
   line-height: 19px;
-  /* opacity: 0.3; */
   margin: 0;
   padding: 0;
 }
