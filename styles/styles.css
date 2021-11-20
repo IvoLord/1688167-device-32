@@ -499,13 +499,14 @@ body {
 .main-header--container {
   position: relative;
   width: 1160px;
-  min-height: 209px;
+  /* min-height: 209px; */
   margin: 0 auto;
   background-color: #ffe17f;
   color: #000000;
   box-sizing: border-box;
   padding-top: 50px;
   padding-bottom: 38px;
+  min-height: 300px;
 }
 
 .main-header--link {
@@ -835,16 +836,33 @@ body {
 /* слайдер-------------------------------------------------------------------------- */
 
 .slider {
+  top: -150px;
   position: relative;
 }
 
 .slider--item {
+  z-index: inherit;
   display: flex;
   justify-content: space-between;
   min-height: 560px;
 }
 
+.slider--count {
+  z-index: 0;
+  position: absolute;
+
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 30px;
+  right: 40px;
+  top: 85px;
+  color: #ffffff;
+}
+
 .item--description {
+  z-index: 1;
   width: 560px;
 }
 
