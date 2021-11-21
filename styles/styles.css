@@ -504,21 +504,21 @@ body {
   background-color: #ffe17f;
   color: #000000;
   box-sizing: border-box;
-  padding-top: 50px;
-  padding-bottom: 38px;
+  /* padding-top: 50px; */
+  /* padding-bottom: 38px; */
   min-height: 300px;
+  padding: 50px 60px;
 }
 
 .main-header--link {
   position: absolute;
   top: -17px;
-  margin-left: 60px;
 }
 
 /* navigation-user --------------------------------------------------------------------------------------------------- */
 
 .navigation-user {
-  margin: 0 60px;
+  /* margin: 0 60px; */
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -534,7 +534,6 @@ body {
   width: 516px;
   min-height: 40px;
   display: flex;
-  margin-right: 24px;
 }
 
 .navigation-user--form:not(:active):focus-within::before {
@@ -548,7 +547,10 @@ body {
   border: 2px solid #af4fff;
 }
 
-.navigation-user--form:active::before {
+/* не понимаю как седлать иерархию классов что бы работала обводка вокруг формы, когда не показывается плейсхолдер в инпуте */
+
+.navigation-user--input-search:not(:placeholder-shown)
+  .navigation-user--form::before {
   position: absolute;
 
   box-sizing: border-box;
@@ -655,9 +657,10 @@ body {
 
 .navigation-user--login {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 220px;
-  min-height: 21px;
+  margin-left: 16px;
 }
 
 /* login--link ----------------------------------------------------------------------------------------------------- */
@@ -690,15 +693,15 @@ body {
   width: 275px;
   min-height: 21px;
   margin: 0;
-  margin-left: auto;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .navigation-user--item {
   position: relative;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 
 .navigation-user--link {
@@ -716,6 +719,22 @@ body {
   width: 10px;
 }
 
+.chart--count {
+  position: absolute;
+  padding: 4px;
+  box-sizing: border-box;
+  left: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 21px;
+  min-width: 21px;
+}
+
 .navigation-user--link--chart::before {
   content: "";
   background-image: url(../img/icons/cart.svg);
@@ -729,6 +748,7 @@ body {
 
 .navigation-main {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -736,14 +756,13 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  margin-top: 29px;
 }
 
 .navigation-main--list1 {
   width: 500px;
   display: flex;
   margin: 0;
-  margin-top: 29px;
-  margin-left: 50px;
   padding: 0;
 }
 
@@ -797,6 +816,10 @@ body {
   background-image: url(../img/icons/minus.svg);
 }
 
+.button--catalog:hover + .submenu {
+  display: flex;
+}
+
 .button--catalog.link:not(:active):focus {
   outline: none;
 }
@@ -810,10 +833,7 @@ body {
   justify-content: space-between;
   width: 500px;
   margin: 0;
-  margin-top: 29px;
-  margin-right: 50px;
   padding: 0;
-  min-height: 50px;
   align-items: center;
 }
 
@@ -831,6 +851,54 @@ body {
   flex-wrap: wrap;
   width: 500px;
   justify-content: space-between;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  z-index: 2;
+  background-color: #ffe17f;
+  flex-wrap: wrap;
+
+  padding: 30px 60px;
+  bottom: -30px;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.submenu--list {
+  margin-right: 30px;
+}
+
+.submenu--item {
+  margin-bottom: 15px;
+}
+
+.submenu--link {
+  font-family: Rubik, "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.submenu--item:hover {
+  opacity: 60%;
+}
+
+.submenu--item:not(:active):focus {
+  opacity: 100%;
+  offset: 2px solid #af4fff;
+  border-radius: 25px;
+}
+
+.submenu--item:hover {
+  opacity: 30%;
 }
 
 /* слайдер-------------------------------------------------------------------------- */
