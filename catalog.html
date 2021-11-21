@@ -52,11 +52,7 @@
               />
 
               <button
-                class="
-                  button button--border
-                  user-form--search-button
-                  visually-hidden
-                "
+                class="button button--border user-form--search-button"
                 type="submit"
               >
                 Найти
@@ -90,10 +86,13 @@
                     link
                     navigation-user--link navigation-user--link--chart
                   "
-                  >Корзина</a
                 >
-
-                <div class="popover popover--chart popover--open">
+                  <!-- доделать счетчик корзины -->
+                  <span class="chart--count">2</span> Корзина</a
+                >
+                <!-- класс для включения попапа -->
+                <!-- popover--open -->
+                <div class="popover popover--chart">
                   <button
                     class="popover--close-button button button--light"
                     type="button"
@@ -196,6 +195,38 @@
                   >Каталог товаров</a
                 >
                 <button class="button button--catalog" type="button"></button>
+                <div class="submenu">
+                  <ul class="list submenu--list">
+                    <li class="submenu--item">
+                      <a class="link submenu--link" href="#">
+                        Виртуальная реальность
+                      </a>
+                    </li>
+                    <li class="submenu--item">
+                      <a class="link submenu--link" href="#">
+                        Моноподы для cелфи
+                      </a>
+                    </li>
+                    <li class="submenu--item">
+                      <a class="link submenu--link" href="#"> Экшн-камеры </a>
+                    </li>
+                  </ul>
+                  <ul class="list submenu--list">
+                    <li class="submenu--item">
+                      <a class="link submenu--link" href="#">
+                        Фитнес-браслеты
+                      </a>
+                    </li>
+                    <li class="submenu--item">
+                      <a class="link submenu--link" href="#"> Умные часы </a>
+                    </li>
+                  </ul>
+                  <ul class="list submenu--list">
+                    <li class="submenu--item">
+                      <a class="link submenu--link" href="#"> Квадрокоптеры </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
             <ul class="list navigation-main--list2">
