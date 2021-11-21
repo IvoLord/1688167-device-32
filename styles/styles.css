@@ -1384,9 +1384,9 @@ body {
 /* пдписка ------------------------------------------------------------------------------------------------------------- */
 
 .appointment {
-  min-height: 421px;
   box-sizing: border-box;
   padding-top: 75px;
+  padding-bottom: 130px;
   color: #000000;
   background-color: #f0f0f0;
 }
@@ -1481,7 +1481,7 @@ body {
 /* футер ------------------------------------------------------------*/
 
 .main-footer {
-  min-height: 321px;
+  padding: 60px 0;
   color: #ffffff;
   background-color: #444444;
 }
@@ -1495,7 +1495,6 @@ body {
   box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
-  padding-top: 62px;
 }
 
 .main-footer--container-nav {
