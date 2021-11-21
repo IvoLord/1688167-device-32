@@ -726,7 +726,6 @@ body {
   padding: 0 4px;
   box-sizing: border-box;
   left: -12px;
-  /* right: 0; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -961,6 +960,14 @@ body {
   width: 220px;
   min-height: 50px;
   margin-top: 30px;
+}
+
+.description--button::before {
+  background-color: #ffe17f;
+}
+
+.description--button:hover::before {
+  background-color: #ffe17f;
 }
 
 .slider-table {
@@ -1344,6 +1351,14 @@ body {
   width: 260px;
 }
 
+.about-us--button::before {
+  background-color: #ffe17f;
+}
+
+.about-us--button:hover::before {
+  background-color: #ffe17f;
+}
+
 .mian-contacts {
   width: 560px;
   display: flex;
@@ -1725,7 +1740,11 @@ body {
 }
 
 .form-items--list {
-  line-height: 38px;
+  line-height: 19px;
+}
+
+.form-items--item {
+  margin-bottom: 19px;
 }
 
 .form-items--button {
@@ -1776,11 +1795,13 @@ body {
 }
 .range--wraper-inputs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .wraper-inputs--range-text {
   display: flex;
+  flex-wrap: wrap;
   color: #00000030;
 }
 
