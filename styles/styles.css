@@ -505,13 +505,13 @@ body {
 .main-header--container {
   position: relative;
   width: 1160px;
-  min-height: 186px;
   margin: 0 auto;
   background-color: #ffe17f;
   color: #000000;
   box-sizing: border-box;
   padding: 50px 60px;
   padding-top: 38px;
+  padding-bottom: 38px;
 }
 
 .main-header--link {
@@ -913,7 +913,7 @@ body {
 /* слайдер-------------------------------------------------------------------------- */
 
 .slider {
-  top: -50px;
+  top: -38px;
   position: relative;
 }
 
@@ -930,13 +930,11 @@ body {
   z-index: inherit;
   display: flex;
   justify-content: space-between;
-  min-height: 560px;
 }
 
 .slider--count {
   z-index: 0;
   position: absolute;
-
   font-family: Rubik, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -1073,10 +1071,9 @@ body {
 /* категории---------------------------------------------------------------- */
 
 .categories {
-  /* min-height: 253px; */
   margin: 0;
   padding: 0;
-  padding-top: 12px;
+  padding-top: 25px;
 }
 
 .categories--list {
@@ -1197,7 +1194,6 @@ body {
 
 .servises--title {
   margin: 0;
-  /* margin-top: -10px; */
   padding: 0;
 }
 
@@ -1439,9 +1435,6 @@ body {
   font-style: normal;
 }
 
-.mian-contacts--shedule {
-}
-
 .mian-contacts--title-item {
   padding: 0;
   margin: 0;
@@ -1452,9 +1445,6 @@ body {
   padding: 0;
   margin: 0;
   margin-top: 17px;
-}
-
-.about-us--button {
 }
 
 /* пдписка ------------------------------------------------------------------------------------------------------------- */
@@ -1689,7 +1679,7 @@ body {
 .inner-header--breadcrumbs {
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 49px;
+  margin-top: 24px;
 }
 
 .inner-header--title {
@@ -1705,12 +1695,18 @@ body {
 }
 
 .breadcrumbs--item {
-  margin-right: 17px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
 }
 
 .breadcrumbs--item::after {
-  content: ">";
-  margin-left: 17px;
+  content: "";
+  background-image: url("../img/icons/nav-arrow.svg");
+  height: 7px;
+  width: 4px;
+  margin-left: 15px;
   opacity: 20%;
 }
 
@@ -1744,6 +1740,7 @@ body {
 
 .main-inner--container {
   display: flex;
+  margin-top: 48px;
 }
 
 .filter-items {
@@ -1763,9 +1760,11 @@ body {
   width: 328px;
   margin: 0;
   padding: 0;
-  padding-left: 68px;
+  padding-left: 60px;
   font-family: Raleway, sans-serif;
   font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
   font-weight: 800;
   line-height: 70px;
   text-transform: uppercase;
@@ -1778,7 +1777,7 @@ body {
 }
 
 .filter-item--form-items {
-  padding-top: 71px;
+  padding-top: 70px;
   padding-right: 68px;
   box-sizing: border-box;
   width: 328px;
@@ -1787,14 +1786,14 @@ body {
 
 .form-items--group {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 36px;
   padding: 0;
   border: none;
 }
 
 .form-title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 37px;
   padding: 0;
   font-family: Rubik, sans-serif;
   font-size: 18px;
@@ -1818,14 +1817,18 @@ body {
   font-family: Rubik, sans-serif;
   font-size: 15px;
   line-height: 18px;
+  letter-spacing: -0.02em;
 }
 
 .form-items--list {
-  line-height: 19px;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+  margin-bottom: -13px;
 }
 
 .form-items--item {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .form-items--button {
@@ -1838,7 +1841,6 @@ body {
 .range--scale {
   position: relative;
   height: 2px;
-  margin-bottom: 15px;
   background-color: #dcdcdc;
 }
 
@@ -1877,7 +1879,9 @@ body {
 .range--wraper-inputs {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
+  margin-top: 14px;
+  left: -6px;
 }
 
 .wraper-inputs--range-text {
@@ -1887,7 +1891,7 @@ body {
 }
 
 .range-text--input {
-  width: 75px;
+  width: 76px;
   min-height: 18px;
   padding: 0 2px;
   font: inherit;
@@ -1981,7 +1985,8 @@ body {
   font-weight: 800;
   line-height: 19px;
   text-transform: uppercase;
-  margin-right: 50px;
+  letter-spacing: 0.2em;
+  margin-right: 36px;
 }
 
 /* список сортировки          ----- */
@@ -2036,7 +2041,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill-opacity: 20%;
+  fill-opacity: 100%;
 }
 
 .sort--link:hover {
@@ -2064,17 +2069,25 @@ body {
 
 .items--cards {
   padding-left: 72px;
-  padding-top: 69px;
+  padding-top: 70px;
   padding-bottom: 77px;
 }
 
+.sort-up {
+  opacity: 20%;
+}
+
+.sort-down {
+  opacity: 100%;
+}
 /*  взаимодействия с карточками         -----*/
 
 .cards--list {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 360px);
-  gap: 40px;
+  row-gap: 46px;
+  column-gap: 40px;
 }
 
 .cards--item {
@@ -2112,7 +2125,7 @@ body {
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 150px;
+  top: 170px;
   position: absolute;
 }
 
@@ -2131,7 +2144,8 @@ body {
 /*          ----- */
 
 .cards--button {
-  width: 160px;
+  width: 180px;
+  margin-top: 20px;
   min-height: 40px;
   display: none;
 }
@@ -2140,7 +2154,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 32px;
+  margin-top: 23px;
 }
 
 .cards--title {
@@ -2150,12 +2164,15 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  letter-spacing: -0.02em;
   width: 280px;
 }
 
 .cards--price {
   color: #444444;
   margin: 0;
+  margin-top: -2px;
+  margin-right: 2px;
   padding: 0;
   text-align: end;
   flex-grow: 1;
@@ -2164,14 +2181,15 @@ body {
 /* pagination         ----- */
 
 .pagination {
-  margin-top: 44px;
+  margin-top: 46px;
   width: 760px;
   box-sizing: border-box;
 }
 
 .pagination--button {
   width: 100%;
-  min-height: 49px;
+  min-height: 55px;
+  letter-spacing: 0.1em;
 }
 
 .select-pagination {
@@ -2195,17 +2213,29 @@ body {
   font-size: 16px;
   line-height: 19px;
   margin: 0;
+  margin-left: 40px;
   padding: 0;
 }
 
 /* кнопки пагинации списка товаров          ----- */
 
 .select-pagination--button {
+  align-items: none;
   line-height: 19px;
   background-color: #ebebeb;
   box-sizing: border-box;
   min-height: 70px;
-  width: 127px;
+  min-width: 127px;
+  letter-spacing: 0.1em;
+}
+
+.select-pagination--button--prev {
+  text-align: start;
+  padding-left: 0px;
+}
+
+.select-pagination--button--next {
+  padding-right: 9px;
 }
 
 .select-pagination--button:hover {
