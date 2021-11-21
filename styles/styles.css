@@ -318,14 +318,10 @@ body {
 
 .popover {
   position: absolute;
-  top: 40px;
-  right: -65px;
-  z-index: 1;
+  z-index: 2;
   box-sizing: border-box;
-  width: 302px;
   color: #ffffff;
   background-color: #000000;
-  min-height: 100px;
   box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
   display: none;
 }
@@ -341,6 +337,13 @@ body {
   width: 100%;
   top: -6px;
   left: 0;
+}
+
+.popover--chart {
+  top: 40px;
+  right: -65px;
+  width: 302px;
+  min-height: 100px;
 }
 
 .popover--open {
@@ -452,6 +455,7 @@ body {
 
 .sum--items p {
   margin: 0;
+  margin-right: 5px;
   padding: 0;
 }
 
@@ -461,6 +465,7 @@ body {
 
 .sum--price p {
   margin: 0;
+  margin-right: 5px;
   padding: 0;
 }
 
@@ -500,13 +505,14 @@ body {
   position: relative;
   width: 1160px;
   /* min-height: 209px; */
+  min-height: 186px;
   margin: 0 auto;
   background-color: #ffe17f;
   color: #000000;
   box-sizing: border-box;
   /* padding-top: 50px; */
   /* padding-bottom: 38px; */
-  min-height: 300px;
+  /* min-height: 300px; */
   padding: 50px 60px;
 }
 
@@ -864,7 +870,7 @@ body {
   flex-wrap: wrap;
 
   padding: 30px 60px;
-  bottom: -30px;
+  bottom: -108px;
   left: 0;
   box-sizing: border-box;
 }
@@ -904,8 +910,17 @@ body {
 /* слайдер-------------------------------------------------------------------------- */
 
 .slider {
-  top: -150px;
+  top: -50px;
   position: relative;
+}
+
+.slider::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(180deg, #ffe17f 150px, #00000000 150px);
 }
 
 .slider--item {
@@ -1387,7 +1402,8 @@ body {
 .appointment--input {
   padding: 0 20px;
   border-bottom: 3px solid #00000010;
-  width: 595px;
+  width: 600px;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 30px;
   color: #44444450;
@@ -2278,8 +2294,26 @@ body {
   background-color: #ffe17f;
 }
 
+.input--button-info:hover + .popover--info {
+  display: flex;
+}
+
 .input--icon-info {
   opacity: 100%;
+}
+
+.popover--info {
+  display: none;
+  top: 35px;
+  left: -20px;
+  padding: 19px;
+  width: 200px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.popover--info::before {
+  left: 65px;
 }
 
 .container--input-count {
