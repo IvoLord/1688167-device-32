@@ -258,6 +258,7 @@ body {
 .lnk {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .link:hover {
