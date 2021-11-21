@@ -872,18 +872,19 @@ body {
   background-color: #ffe17f;
   flex-wrap: wrap;
 
-  padding: 30px 60px;
-  bottom: -110px;
+  padding: 40px 60px;
+  padding-top: 30px;
+  bottom: -145px;
   left: 0;
   box-sizing: border-box;
 }
 
 .submenu--list {
-  margin-right: 30px;
+  margin-right: 43px;
 }
 
 .submenu--item {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .submenu--link {
