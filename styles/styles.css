@@ -1588,6 +1588,8 @@ body {
 .inner--header {
   width: 1160px;
   margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 .inner-header--breadcrumbs {
@@ -1969,6 +1971,7 @@ body {
 /*  взаимодействия с карточками         -----*/
 
 .cards--list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 360px);
   gap: 40px;
@@ -1976,6 +1979,28 @@ body {
 
 .cards--item {
   position: relative;
+}
+
+.cards--item--new::before {
+  content: "NEW";
+  position: absolute;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2em;
+
+  box-sizing: border-box;
+
+  top: 27px;
+  right: 27px;
+  opacity: 60%;
+  min-height: 60px;
+  width: 60px;
+  border: 2px solid #000000;
+  border-radius: 50%;
 }
 
 .cards--item:hover .cards--img {
