@@ -1461,8 +1461,8 @@ body {
 
 .appointment {
   box-sizing: border-box;
-  padding-top: 75px;
-  padding-bottom: 130px;
+  padding-top: 77px;
+  padding-bottom: 125px;
   color: #000000;
   background-color: #f0f0f0;
 }
@@ -1473,12 +1473,17 @@ body {
   margin: 0 auto;
 }
 
+.appointment--container + .appointment--container {
+  margin-top: 36px;
+}
+
 .appointment--title {
   width: 560px;
   margin-right: 40px;
 }
 
 .appointment--content {
+  margin-top: 10px;
   width: 560px;
 }
 
@@ -1490,6 +1495,7 @@ body {
 
 .appointment--input {
   padding: 0 20px;
+  padding-left: 0;
   border-bottom: 3px solid #00000010;
   width: 600px;
   box-sizing: border-box;
@@ -1528,6 +1534,7 @@ body {
 .appointment--button {
   width: 260px;
   min-height: 55px;
+  font-size: 18px;
 }
 
 .appointment--button:hover {
@@ -1546,7 +1553,7 @@ body {
 }
 
 .appointment--icon-its-free {
-  margin-right: 21px;
+  margin-right: 18px;
   fill: #08af00;
 }
 
@@ -1563,6 +1570,8 @@ body {
 }
 
 .main-footer--logo {
+  margin-top: 1px;
+  margin-left: -1px;
   height: 36px;
   width: 145px;
 }
@@ -1583,24 +1592,21 @@ body {
 .main-footer--address {
   font-size: 16px;
   line-height: 19px;
-  width: 238px;
-  font-family: Rubik;
+  min-width: 234px;
   margin: 0;
   padding: 0;
 }
 
-.main-footer--servises {
-  min-width: 458px;
+.footer-servises--list {
+  width: 436px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-}
-
-.footer-servises--list {
   display: flex;
   justify-content: space-between;
 }
 
 .main-footer--phone-number {
+  margin-left: 60px;
   font-size: 16px;
   color: inherit;
   text-decoration: none;
@@ -1614,7 +1620,7 @@ body {
 }
 
 .main-footer--container-social.decorate--hor-line::before {
-  margin-right: 170px;
+  margin-right: 32px;
   background-color: #ffc700;
 }
 
