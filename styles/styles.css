@@ -1186,6 +1186,7 @@ input {
 }
 
 .servises--item {
+  outline: 1px solid red;
   background-repeat: no-repeat;
   background-position: right;
   margin-left: 4px;
@@ -1194,6 +1195,7 @@ input {
 }
 
 .servises--delivery {
+  outline: 1px solid red;
   background-image: url("../img/other/servises-delivery.svg");
   background-size: 136px 164px;
   background-position-y: 15px;
@@ -2073,7 +2075,11 @@ input {
   fill-opacity: 50%;
 }
 
-.sort--link:not(:active):focus:before {
+.sort--link:not(:active):focus {
+  outline: none;
+}
+
+.sort--link:not(:active):focus::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -2166,6 +2172,11 @@ input {
   color: #af4fff;
 }
 
+.cards--item:focus-visible,
+.cards--item .link--cards:focus-visible,
+.cards--item .cards--img:focus-visible {
+  outline: none;
+}
 /*          ----- */
 
 .cards--button {
