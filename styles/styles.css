@@ -1010,7 +1010,7 @@ input {
   position: absolute;
   content: "";
   top: 252px;
-  left: 17px;
+  left: 19px;
   display: flex;
   width: 522px;
   justify-content: space-between;
@@ -1171,7 +1171,7 @@ input {
 
 .servises {
   position: relative;
-  margin-top: 82px;
+  margin-top: 81px;
   min-height: 388px;
   background-image: linear-gradient(180deg, #ffffff 100px, #f0f0f0 100px);
 }
@@ -1495,7 +1495,6 @@ input {
 
 .appointment--form {
   display: flex;
-  height: 55px;
   align-self: center;
 }
 
@@ -1605,7 +1604,7 @@ input {
 }
 
 .footer-servises--list {
-  width: 436px;
+  width: 440px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   display: flex;
@@ -1614,6 +1613,8 @@ input {
   line-height: 21px;
   font-weight: 800;
   font-family: Raleway, sans-serif;
+  position: relative;
+  top: 4px;
 }
 
 .main-footer--phone-number {
@@ -1641,6 +1642,7 @@ input {
   margin-left: auto;
   margin-right: auto;
   min-width: 150px;
+  margin-top: 1px;
 }
 
 /* main-footer--link          ----- */
@@ -1820,6 +1822,7 @@ input {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 /* декор линия          ----- */
@@ -2194,7 +2197,7 @@ input {
   line-height: 21px;
   color: #444444;
   margin: 0;
-  margin-top: -2px;
+  margin-top: 3px;
   margin-right: 2px;
   padding: 0;
   text-align: end;
@@ -2213,7 +2216,6 @@ input {
   font-size: 16px;
   width: 100%;
   min-height: 55px;
-  letter-spacing: 0.1em;
 }
 
 .select-pagination {
