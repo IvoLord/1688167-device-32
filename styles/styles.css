@@ -80,6 +80,10 @@ body {
   fill: #000000;
 }
 
+input {
+  font-family: Rubik, sans-serif;
+}
+
 /* checkbox  radio       ----- */
 
 .control {
@@ -481,6 +485,8 @@ body {
   background-color: #ffffff;
   width: 100%;
   min-height: 50px;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .open-chart--button:hover {
@@ -577,6 +583,7 @@ body {
 /* инпут          ----- */
 
 .navigation-user--input-search {
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 19px;
   padding-left: 20px;
@@ -609,6 +616,10 @@ body {
 /* действия кнопки поиска         ----- */
 
 .user-form--search-button {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
   z-index: 0;
   position: relative;
   border: none;
@@ -673,6 +684,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 19px;
 }
 
 .login--link::before {
@@ -839,6 +851,7 @@ body {
 
 .navigation-main--list2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 500px;
   margin: 0;
@@ -1040,6 +1053,7 @@ body {
 /* активность пагинация слайдера           ----- */
 
 .photo-pagination--button {
+  font-size: 16px;
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 50%;
@@ -1080,9 +1094,9 @@ body {
 .categories--list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
 }
 
 .categories--item {
@@ -1309,6 +1323,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 600px;
   margin: 0 auto;
   min-height: inherit;
@@ -1526,6 +1541,7 @@ body {
   width: 260px;
   min-height: 55px;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .appointment--button:hover {
@@ -1593,7 +1609,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  line-height: 21px;
+  font-weight: 800;
+  font-family: Raleway, sans-serif;
 }
 
 .main-footer--phone-number {
@@ -1998,6 +2018,7 @@ body {
   border: none;
   font: inherit;
   font-size: 16px;
+  line-height: 19px;
   background-color: transparent;
   appearance: none;
   background-image: url("../img/icons/dropdown.svg");
@@ -2170,6 +2191,7 @@ body {
 }
 
 .cards--price {
+  line-height: 21px;
   color: #444444;
   margin: 0;
   margin-top: -2px;
@@ -2188,6 +2210,7 @@ body {
 }
 
 .pagination--button {
+  font-size: 16px;
   width: 100%;
   min-height: 55px;
   letter-spacing: 0.1em;
@@ -2348,12 +2371,15 @@ body {
 /*          ----- */
 
 .modal--title {
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
   padding: 0;
   letter-spacing: -0.025em;
+  outline: 1px solid red;
+  padding-right: 40px;
 }
 
 .order--form {
@@ -2379,6 +2405,7 @@ body {
 .input--name,
 .input--email {
   width: 360px;
+  line-height: 20px;
 }
 
 /* order-form--input          ----- */
