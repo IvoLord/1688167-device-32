@@ -341,13 +341,13 @@ input {
   height: 6px;
   width: 100%;
   top: -6px;
-  left: 0;
+  left: -3px;
 }
 
 .popover--chart {
-  top: 40px;
-  right: -65px;
-  width: 302px;
+  top: 39px;
+  right: -80px;
+  width: 320px;
   min-height: 100px;
 }
 
@@ -450,6 +450,8 @@ input {
 .chart--sum {
   display: flex;
   padding: 20px;
+  padding-top: 14px;
+  padding-right: 16px;
   justify-content: space-between;
   background-color: #1a1a1a;
 }
@@ -476,6 +478,7 @@ input {
 
 .chart--open-chart {
   padding: 20px;
+  padding-top: 11px;
 }
 
 /*open-chart--button          -----  */
@@ -485,8 +488,9 @@ input {
   background-color: #ffffff;
   width: 100%;
   min-height: 50px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
+  letter-spacing: 0.2em;
 }
 
 .open-chart--button:hover {
