@@ -1004,6 +1004,13 @@ input {
 .slider-table td {
   font-size: 36px;
   line-height: 30px;
+  min-width: 140px;
+}
+
+.slider-table td:nth-child(2) {
+  font-size: 36px;
+  line-height: 30px;
+  min-width: 117px;
 }
 
 .slider--photo-buttons {
