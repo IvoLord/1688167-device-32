@@ -42,8 +42,6 @@ html {
   height: 100%;
 }
 
-/* главная-------------------------------------------------- */
-
 body {
   margin: 0;
   min-width: 1440px;
@@ -83,8 +81,6 @@ body {
 input {
   font-family: Rubik, sans-serif;
 }
-
-/* checkbox  radio       ----- */
 
 .control {
   position: relative;
@@ -130,7 +126,6 @@ input {
   height: 8px;
   width: 8px;
 }
-/* buttons -------------------------------------------------- */
 
 .button {
   z-index: 0;
@@ -187,8 +182,6 @@ input {
   color: #00000030;
 }
 
-/* border -------------------------------------------------- */
-
 .button--border {
   font: 16px;
   line-height: 19px;
@@ -211,8 +204,6 @@ input {
   border: 3px solid #00000030;
 }
 
-/* round -------------------------------------------------- */
-
 .button--icon-round {
   display: flex;
   align-self: center;
@@ -225,8 +216,6 @@ input {
 .icon--round {
   opacity: 30%;
 }
-
-/* social button -------------------------------------------------- */
 
 .button-social:hover {
   background-color: #ffc700;
@@ -256,8 +245,6 @@ input {
   fill: #00000030;
 }
 
-/* link-action -------------------------------------------------- */
-
 .link,
 .lnk {
   color: inherit;
@@ -279,8 +266,6 @@ input {
 .link:active {
   opacity: 30%;
 }
-
-/* form -------------------------------------------------- */
 
 .form {
   font-style: normal;
@@ -318,8 +303,6 @@ input {
 .title.decorate--hor-line::before {
   margin-bottom: 42px;
 }
-
-/* popover          ----- */
 
 .popover {
   position: absolute;
@@ -416,8 +399,6 @@ input {
   opacity: 60%;
 }
 
-/* кнопка удалить из списка покупок         ----- */
-
 .button.chart-item--button {
   position: relative;
   margin-top: 7px;
@@ -444,8 +425,6 @@ input {
 .button.chart-item--button:active {
   fill: #ffffff30;
 }
-
-/*          ----- */
 
 .chart--sum {
   display: flex;
@@ -481,8 +460,6 @@ input {
   padding-top: 11px;
 }
 
-/*open-chart--button          -----  */
-
 .open-chart--button {
   color: #000000;
   background-color: #ffffff;
@@ -506,8 +483,6 @@ input {
   color: #00000030;
 }
 
-/* хедер-------------------------------------------------- */
-
 .main-header {
   padding-top: 40px;
 }
@@ -529,15 +504,12 @@ input {
   top: -23px;
 }
 
-/* navigation-user -------------------------------------------------- */
-
 .navigation-user {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
 }
 
-/* форма поиска          ----- */
 .navigation-user--form {
   position: relative;
   box-sizing: border-box;
@@ -575,13 +547,10 @@ input {
   box-sizing: border-box;
 }
 
-/* иконка в форме         ----- */
 .navigation-user--icon-search {
   margin-left: 16px;
   min-width: 16px;
 }
-
-/* инпут          ----- */
 
 .navigation-user--input-search {
   z-index: 1;
@@ -619,8 +588,6 @@ input {
   outline: none;
 }
 
-/* действия кнопки поиска         ----- */
-
 .user-form--search-button {
   font-size: 16px;
   font-weight: normal;
@@ -631,8 +598,6 @@ input {
   border: none;
   width: 160px;
 }
-
-/* before для того что бы рамка не попала на рамку формы и кнопка не сузилась */
 
 .user-form--search-button::before {
   z-index: -1;
@@ -683,8 +648,6 @@ input {
   width: 220px;
   margin-left: 16px;
 }
-
-/* login--link -------------------------------------------------- */
 
 .login--link {
   display: flex;
@@ -765,12 +728,9 @@ input {
   background-image: url(../img/icons/cart.svg);
   background-repeat: no-repeat;
   margin-right: 10px;
-  /* margin-left: 5px; */
   height: 16px;
   min-width: 16px;
 }
-
-/* navigation-main-------------------------------------------------- */
 
 .navigation-main {
   display: flex;
@@ -782,7 +742,6 @@ input {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  /*  */
   margin-top: 20px;
 }
 
@@ -822,8 +781,6 @@ input {
 .link--catalog {
   margin-right: 17px;
 }
-
-/* button--catalog круглая кнопка +           ----- */
 
 .button--catalog {
   box-sizing: border-box;
@@ -907,7 +864,7 @@ input {
 }
 
 .submenu--link {
-  font-family: Rubik, "sans-serif";
+  font-family: Rubik, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -929,8 +886,6 @@ input {
 .submenu--item:hover {
   opacity: 30%;
 }
-
-/* слайдер-------------------------------------------------- */
 
 .slider {
   top: -38px;
@@ -1046,8 +1001,6 @@ input {
   margin-right: 22px;
 }
 
-/* активность кнопок слайдера           ----- */
-
 .photo-buttons--button:hover {
   opacity: 60%;
 }
@@ -1062,8 +1015,6 @@ input {
 .photo-buttons--button:active {
   opacity: 30%;
 }
-
-/* активность пагинация слайдера           ----- */
 
 .photo-pagination--button {
   font-size: 16px;
@@ -1095,8 +1046,6 @@ input {
 .photo-pagination--button.active {
   background-color: #000000;
 }
-
-/* категории-------------------------------------------------- */
 
 .categories {
   margin: 0;
@@ -1152,8 +1101,6 @@ input {
   top: 4px;
 }
 
-/* категории действие           ----- */
-
 .categories--link:hover {
   opacity: 100%;
 }
@@ -1179,8 +1126,6 @@ input {
 .categories--item:active .categories--link {
   opacity: 30%;
 }
-
-/* сервисы-------------------------------------------------- */
 
 .servises {
   position: relative;
@@ -1270,8 +1215,6 @@ input {
   width: 280px;
 }
 
-/* активноть плашек сервисов          ----- */
-
 .servises--pagination-button {
   width: 160px;
   min-height: 40px;
@@ -1311,8 +1254,6 @@ input {
   top: -80px;
   left: 277px;
 }
-
-/* о нас-------------------------------------------------- */
 
 .container--about-us {
   width: 1160px;
@@ -1365,8 +1306,6 @@ input {
   width: 100%;
 }
 
-/* about-delivery активность          ------ */
-
 .about-delivery--link:hover {
   opacity: 100%;
 }
@@ -1393,8 +1332,6 @@ input {
 .about-delivery:active .categories--icon-info {
   opacity: 30%;
 }
-
-/* раздел about-us          ----- */
 
 .about-us--container-flex {
   min-height: 575px;
@@ -1498,8 +1435,6 @@ input {
   margin-top: 17px;
 }
 
-/* пдписка -------------------------------------------------- */
-
 .appointment {
   box-sizing: border-box;
   padding-top: 77px;
@@ -1602,8 +1537,6 @@ input {
   font-weight: normal;
 }
 
-/* футер --------------------------------------------------*/
-
 .main-footer {
   padding: 60px 0;
   color: #ffffff;
@@ -1680,8 +1613,6 @@ input {
   margin-top: 1px;
 }
 
-/* main-footer--link          ----- */
-
 .main-footer--link {
   position: relative;
   display: flex;
@@ -1725,8 +1656,6 @@ input {
   fill: #ffffff30;
 }
 
-/* каталог --------------------------------------------------*/
-
 .inner--header {
   width: 1160px;
   margin: 0 auto;
@@ -1744,8 +1673,6 @@ input {
   margin-top: 37px;
   margin-bottom: 14px;
 }
-
-/* breadcrumbs         ----- */
 
 .breadcrumbs--list {
   display: flex;
@@ -1793,8 +1720,6 @@ input {
 .breadcrumbs-link:active {
   color: #00000030;
 }
-
-/*          ----- */
 
 .main-inner--container {
   display: flex;
@@ -1860,8 +1785,6 @@ input {
   letter-spacing: -0.02em;
 }
 
-/* декор линия          ----- */
-
 .form-title::before {
   content: "";
   display: block;
@@ -1894,8 +1817,6 @@ input {
   width: 100%;
   min-height: 40px;
 }
-
-/* рендж ругулировка          ----- */
 
 .range--scale {
   position: relative;
@@ -1986,8 +1907,6 @@ input {
   margin: 0;
 }
 
-/* активность инпутов в форме         ------ */
-
 .control .control--input:not(:checked) + .control--mark {
   opacity: 20%;
 }
@@ -2018,8 +1937,6 @@ input {
   background-color: #af4fff;
 }
 
-/* блок товаров -------------------------------------------------- */
-
 .items {
   flex-grow: 1;
 }
@@ -2047,8 +1964,6 @@ input {
   letter-spacing: 0.2em;
   margin-right: 36px;
 }
-
-/* список сортировки          ----- */
 
 .form--select-list {
   width: 217px;
@@ -2083,8 +1998,6 @@ input {
   opacity: 30%;
 }
 
-/*          ----- */
-
 .sort-link--container {
   display: flex;
   justify-content: space-between;
@@ -2093,8 +2006,6 @@ input {
   margin-left: auto;
   padding: 0;
 }
-
-/* сортировка больше-меньше         ----- */
 
 .sort--link {
   position: relative;
@@ -2144,7 +2055,6 @@ input {
 .sort-down {
   opacity: 100%;
 }
-/*  взаимодействия с карточками         -----*/
 
 .cards--list {
   position: relative;
@@ -2210,7 +2120,6 @@ input {
 .cards--item .cards--img:focus-visible {
   outline: none;
 }
-/*          ----- */
 
 .cards--button {
   width: 180px;
@@ -2247,8 +2156,6 @@ input {
   text-align: end;
   flex-grow: 1;
 }
-
-/* pagination         ----- */
 
 .pagination {
   margin-top: 46px;
@@ -2287,8 +2194,6 @@ input {
   padding: 0;
 }
 
-/* кнопки пагинации списка товаров          ----- */
-
 .select-pagination--button {
   align-items: none;
   line-height: 19px;
@@ -2322,8 +2227,6 @@ input {
   color: #00000030;
 }
 
-/* списко страниц         ------ */
-
 .select-pagination-link {
   color: #00000030;
 }
@@ -2353,8 +2256,6 @@ input {
   color: #00000010;
 }
 
-/* модальное окно -------------------------------------------------- */
-
 .modal--container {
   z-index: 10;
   position: fixed;
@@ -2381,8 +2282,6 @@ input {
 .modal--order {
   width: 920px;
 }
-
-/* кнопка закрытия          ----- */
 
 .modal--close-button {
   position: absolute;
@@ -2413,8 +2312,6 @@ input {
 .modal--close-button:active {
   opacity: 30%;
 }
-
-/*          ----- */
 
 .modal--title {
   font-family: Raleway, sans-serif;
@@ -2452,8 +2349,6 @@ input {
   width: 360px;
   line-height: 20px;
 }
-
-/* order-form--input          ----- */
 
 .order-form--input {
   box-sizing: border-box;
@@ -2496,8 +2391,6 @@ input {
   color: #ff3d3d;
 }
 
-/*          ----- */
-
 .order-form--order {
   margin-top: 14px;
 }
@@ -2517,8 +2410,6 @@ input {
   padding-top: 17px;
   width: 560px;
 }
-
-/*          ----- */
 
 .container--label {
   position: relative;
@@ -2633,8 +2524,6 @@ input {
   opacity: 10%;
 }
 
-/*          ----- */
-
 .input--type-count::-webkit-outer-spin-button,
 .input--type-count::-webkit-inner-spin-button {
   appearance: none;
@@ -2651,8 +2540,6 @@ input {
   background-size: 16px 16px;
 }
 
-/*          ----- */
-
 .order-form--button {
   min-height: 40px;
   width: 200px;
@@ -2662,5 +2549,3 @@ input {
 .modal--container--close {
   display: none;
 }
-
-/* ------------------ */
